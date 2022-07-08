@@ -4,23 +4,51 @@ h1 {
   font-weight: bold;
 }
 
-body {
-  background-image: url("./img/Ciel-bleu.jpg");
+.accueil {
+  text-align: center;
+  /* pour fixer l'image en haut à gauche */
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* Préserve le ratio de l'image et l'adapte à la taille de l'écran*/
+  min-width: 100%;
+  min-height: 100%;
   background-size: cover;
 }
 
-.accueil {
-  text-align: center;
+.contenuAccueil {
+  margin-top: 2rem;
 }
 
 .accueil img {
   max-width: 30rem;
-  /* background: radial-gradient(ellipse farthest-corner,rgb(176,218,240), rgb(0,0,0, 0) 30% ); */
 }
 
-.pageDark {
-  background-image: none;
+.accueil h2 {
+  margin-bottom: 3rem;
 }
+
+.bouton {
+  width: 15rem;
+  height: 6rem;
+
+  border: 0.2rem solid rgb(144, 147, 163);
+  background-color: #444751;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 1rem 0 rgb(0, 0, 0, 0.3);
+  background: linear-gradient(rgb(99, 99, 110), rgb(59, 61, 70));
+  box-sizing: border-box;
+}
+
+.bouton p {
+  margin: 0;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+
 
 
 
