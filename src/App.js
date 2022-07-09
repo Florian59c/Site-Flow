@@ -11,22 +11,11 @@ export default function App() {
   // initialisation de ma state isDark a false (booleen)
   const [isDark, setIsDark] = useState(false);
 
+  // fonction appelé lors du clic sur le bouton
+  // met à jour la state à chaque clic, en inversant le booleen
   const changeMode = () => {
     setIsDark(current => !current);
   };
-
-  const changeHover = (e) => {
-    // {isDark ? e.target.style.background = 'red' : e.target.style.background = 'green'}
-  };
-
-  const returnHover = (e) => {
-    // {isDark ? e.target.style.background = 'blue' : e.target.style.background = 'white'}
-  };
-
-
-
-
-
 
   return (
     <div className='accueil' style={{ backgroundImage: isDark ? `url(${nuit})` : `url(${jour})` }}>
@@ -59,13 +48,10 @@ export default function App() {
             {isDark ? 'was appeared !' : 'vous présente ses projets'}
           </h2>
         </div>
-        <button className={`bouton ${isDark ? "boutonDark" : "boutonLight"}`} onClick={changeMode} onMouseEnter={changeHover} onMouseLeave={returnHover}
-        >
+        <button className={`bouton ${isDark ? "boutonDark" : "boutonLight"}`} onClick={changeMode}>
           {isDark ? <p>Light Mode ?</p> : <p>Dark Mode</p>}
         </button>
       </div>
     </div>
   )
 }
-
-
