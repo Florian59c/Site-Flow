@@ -24,8 +24,25 @@ h1 {
   max-width: 30rem;
 }
 
+/* le fond blanc en dégradé elipsoidle sur l'image de la page d'accueil mode Light */
+.accueil .imgLight {
+  background: radial-gradient(ellipse farthest-corner,rgb(176,218,240), rgb(0,0,0, 0) 30% );
+}
+
 .accueil h2 {
   margin-bottom: 3rem;
+}
+
+/* styles des h1 et h2 de la page d'accueil mode Light */
+.accueil .titreLight {
+  color: #22211F;
+  text-shadow: -0.5rem 0.5rem 1rem #22211F;
+}
+
+/* styles des h1 et h2 de la page d'accueil mode Dark */
+.accueil .titreDark {
+  color: white;
+  text-shadow: -0.5rem 0.5rem 1rem #E0E0E0;
 }
 
 .bouton {
@@ -41,6 +58,25 @@ h1 {
   font-size: 2rem;
   font-weight: bold;
 }
+
+.boutonLight {
+  color: black;
+  border: 0.2rem solid rgb(144, 147, 163);
+  background-color: #444751;
+  box-shadow: 0 1rem 1rem 0 rgb(0, 0, 0, 0.3);
+  background: linear-gradient(rgb(99, 99, 110), rgb(59, 61, 70));
+}
+
+.boutonDark {
+  color: white;
+  border: 0.2rem solid rgb(208, 208, 211);
+  background-color: #bababd;
+  box-shadow: 0 1rem 1rem 0 rgb(255, 255, 255, 0.4);
+  background: linear-gradient(rgb(209, 209, 209), rgb(70, 70, 70));
+}
+
+
+
 
 
 
