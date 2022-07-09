@@ -5,6 +5,7 @@ import flow from './img/Flow.png';
 import loup from './img/Loup.png';
 import jour from './img/Ciel-bleu.jpg';
 import nuit from './img/Ciel-nuit.jpg';
+import { Link } from 'react-router-dom';
 
 export default function App() {
 
@@ -45,12 +46,20 @@ export default function App() {
         </div>
         <div>
           <h2 className={`${isDark ? "titreDark" : "titreLight"}`}>
-            {isDark ? 'was appeared !' : 'vous présente ses projets'}
+            {isDark ? 'appeared !' : 'vous présente ses projets'}
           </h2>
         </div>
-        <button className={`bouton ${isDark ? "boutonDark" : "boutonLight"}`} onClick={changeMode}>
-          {isDark ? <p>Light Mode ?</p> : <p>Dark Mode</p>}
-        </button>
+        {isDark ?
+          <Link to={"/projets"}>
+            <button className={`bouton ${isDark ? "boutonDark" : "boutonLight"}`} onClick={changeMode}>
+              {isDark ? <p>Light Mode ?</p> : <p>Dark Mode</p>}
+            </button>
+          </Link>
+          :
+          <button className={`bouton ${isDark ? "boutonDark" : "boutonLight"}`} onClick={changeMode}>
+            {isDark ? <p>Light Mode ?</p> : <p>Dark Mode</p>}
+          </button>
+        }
       </div>
     </div>
   )

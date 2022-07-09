@@ -12,7 +12,7 @@ const Root = () => {
         <BrowserRouter>
             <Switch>
                 <Route exact path="/" component={App} />
-                <Route path="projets" component={Projets} />
+                <Route path="/projets" component={Projets} />
                 {/* si aucune route ne correspond à ce qui est specifié dans l'url on affiche le composant NotFound */}
                 <Route component={NotFound} />
             </Switch>
