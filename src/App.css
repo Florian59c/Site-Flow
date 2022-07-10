@@ -60,6 +60,8 @@ h1 {
   height: 6rem;
   border-radius: 2rem;
   box-sizing: border-box;
+  /* change le curseur pour simuler que le bouton est cliquable */
+  cursor: pointer;
 }
 
 /* Styles du bouton pour le mode Light */

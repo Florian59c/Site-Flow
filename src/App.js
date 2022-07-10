@@ -18,6 +18,16 @@ export default function App() {
     setIsDark(current => !current);
   };
 
+  // fonction qui retourne le bouton cliquable
+  // centralisé ici, car il est répété 2 fois dans la dernière ternaire (1 avec un Link et l'autre sans Link)
+  const boutonSwitch = () => {
+    return (
+      <button className={`bouton ${isDark ? "boutonDark" : "boutonLight"}`} onClick={changeMode}>
+        {isDark ? <p>Light Mode ?</p> : <p>Dark Mode</p>}
+      </button>
+    )
+  };
+
   return (
     <div className='accueil' style={{ backgroundImage: isDark ? `url(${nuit})` : `url(${jour})` }}>
       <div className='contenuAccueil'>
@@ -49,17 +59,7 @@ export default function App() {
             {isDark ? 'appeared !' : 'vous présente ses projets'}
           </h2>
         </div>
-        {isDark ?
-          <Link to={"/projets"}>
-            <button className={`bouton ${isDark ? "boutonDark" : "boutonLight"}`} onClick={changeMode}>
-              {isDark ? <p>Light Mode ?</p> : <p>Dark Mode</p>}
-            </button>
-          </Link>
-          :
-          <button className={`bouton ${isDark ? "boutonDark" : "boutonLight"}`} onClick={changeMode}>
-            {isDark ? <p>Light Mode ?</p> : <p>Dark Mode</p>}
-          </button>
-        }
+        {isDark ? <Link to={"/projets"}> {boutonSwitch()} </Link> : boutonSwitch()}
       </div>
     </div>
   )
