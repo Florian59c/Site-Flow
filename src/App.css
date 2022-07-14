@@ -60,6 +60,12 @@ p {
   font-weight: bold;
 }
 
+/* Styles du texte du bouton communs aux 2 modes lorsque l'on survole */
+.bouton:hover p {
+  font-weight: normal;
+  font-size: 1.9rem;
+}
+
 /* Styles communs au bouton pour les 2 modes */
 .bouton {
   width: 15rem;
@@ -99,12 +105,6 @@ p {
   border: 0.4rem solid rgb(228, 228, 231);
   box-shadow: 0 0.4rem 1rem 0 rgb(255, 255, 255, 0.3);
   background: linear-gradient(rgb(199, 199, 199), rgb(90, 90, 90));
-}
-
-/* Styles du texte du bouton communs aux 2 modes lorsque l'on survole */
-.bouton:hover p {
-  font-weight: normal;
-  font-size: 1.9rem;
 }
 
 
@@ -155,10 +155,16 @@ p {
 /* Styles du Footer */
 
 .footer {
-  padding: 1rem;
+  padding: 1rem 2rem;
   background-color: rgb(24, 23, 21);
   color: rgb(235, 235, 235);
+  border-top: 0.4rem solid rgb(14, 13, 11);
 }
+
+/* .footer a {
+  text-decoration: none;
+  color: rgb(235, 235, 235);
+} */
 
 .footer img {
   width: 3rem;
@@ -168,7 +174,11 @@ p {
 }
 
 @media screen and (min-width: 576px) {
+  /* padding un peu plus grand sur les ecrans au dessus du tel */
   .footer {
-  padding: 1rem 3rem;
+  padding: 1.5rem 5rem;
+  }
+  .footer .copyright {
+    font-size: 2rem;
   }
 }

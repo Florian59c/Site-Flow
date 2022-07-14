@@ -1,29 +1,39 @@
 import React from 'react';
+// import { useHistory } from "react-router-dom";
 import { Col, Row } from 'antd';
 import AN from '../img/Drapeau-Anglais.png';
 import JP from '../img/Drapeau-Japonais.png';
+import CV from '../fichiers/CV - Cagnon Florian.pdf';
 
 const Footer = () => {
+
+    // const history = useHistory();
+    // const redirection = () =>{ 
+    //   let url = "https://www.google.fr/";
+    //   history.push(url);
+    // }
+
     return (
         <div className='footer'>
 
-            <Row>
+            <Row justify='space-between' align="middle">
                 <Col>
                     <Row>
                         <Col span={24}>
-                            <p>CV</p>
+                            <a href={CV} target="_blank"><p>CV</p></a>
                         </Col>
                         <Col span={24}>
-                            <p>LinkedIn</p>
+                            <a href="https://www.linkedin.com/in/florian-cagnon-dev-web-fullstack/" target="_blank"><p>LinkedIn</p></a>
+                            {/* <p onClick={redirection}>LinkedIn</p> */}
                         </Col>
                     </Row>
                 </Col>
                 <Col>
-                    <p>Ce site a été créé en intégralité par Cagnon Florian</p>
+                    <p className='copyright'>Ce site a été créé en intégralité par Cagnon Florian</p>
                 </Col>
                 <Col>
-                    <img src={AN} alt="drapeau anglais pour changer la langue en anglais" />
-                    <img src={JP} alt="drapeau japonais pour changer la langue en japonais" />
+                    <a href="https://translate.google.fr/?hl=fr&sl=fr&tl=en&text=Vous%20pensiez%20que%20%C3%A7a%20changerait%20la%20langue%20%3F!%20Dommage...&op=translate" target="_blank"><img src={AN} alt="drapeau anglais pour changer la langue en anglais" /></a>
+                    <a href="https://translate.google.fr/?hl=fr&sl=fr&tl=ja&text=Vous%20pensiez%20que%20%C3%A7a%20changerait%20la%20langue%20%3F!%20Dommage...&op=translate" target="_blank"><img src={JP} alt="drapeau japonais pour changer la langue en japonais" /></a>
                 </Col>
             </Row>
         </div>
