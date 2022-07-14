@@ -114,6 +114,10 @@ p {
 .header {
   border-bottom: 0.4rem solid rgb(179, 179, 179);
   border-radius: 0 0 2rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .header h1 {
@@ -139,11 +143,7 @@ p {
   padding: 0;
 }
 
-
 /* Styles de la page des projets */
-
-
-
 
 
 
@@ -174,10 +174,26 @@ p {
 }
 
 @media screen and (min-width: 576px) {
+
+  /* header */
+
+  .header {
+    /* retire le positionnement de la barre pour les grands ecrans */
+    /* ainsi, le header ne reste pas lors du scroll */
+    position: relative;
+  }
+
+  /*  */
+
+
+
+  /* footer */
+
   /* padding un peu plus grand sur les ecrans au dessus du tel */
   .footer {
-  padding: 1.5rem 5rem;
+    padding: 1.5rem 5rem;
   }
+
   .footer .copyright {
     font-size: 2rem;
   }

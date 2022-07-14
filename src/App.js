@@ -33,9 +33,9 @@ export default function App() {
       <div className='contenuAccueil'>
         <div>
           {isDark ?
-            <img src={loup} alt="cercle d'eau en mouvement" />
+            <img src={loup} alt="Cercle d'eau en mouvement" />
             :
-            <img className='imgLight' src={flow} alt="image d'un loup hurlant à la lune" />
+            <img className='imgLight' src={flow} alt="Loup hurlant à la lune" />
           }
         </div>
         <div>
