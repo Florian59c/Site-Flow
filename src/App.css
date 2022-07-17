@@ -145,8 +145,46 @@ p {
 
 /* Styles de la page des projets */
 
+.projetsContainer {
+  margin: 12rem 3rem 0 3rem;
+}
 
 
+
+
+
+
+
+
+/* boutons de la page projets */
+
+.boutonProjets button {
+  display: inline-block;
+  width: 100%;
+  border: 0.5rem solid rgb(144, 147, 163);
+  background-color: #444751;
+  border-radius: 5rem;
+  box-shadow: 0 1rem 1rem 0 rgb(0, 0, 0, 0.3);
+  background: linear-gradient(rgb(99, 99, 110), rgb(59, 61, 70));
+  box-sizing: border-box;
+}
+
+.boutonProjets h1 {
+  font-size: 4rem;
+  padding: 1rem 0;
+  color: rgb(235, 235, 235);
+}
+
+.boutonProjets button:hover {
+  border: 0.5rem solid rgb(164, 167, 183);
+  background-color: #585b65;
+  box-shadow: 0 0.5rem 0.5rem 0 rgb(0, 0, 0, 0.1);
+  background: linear-gradient(rgb(119, 119, 130), rgb(79, 81, 90));
+}
+
+.boutonProjets h1:hover {
+  color: white;
+}
 
 
 
@@ -183,7 +221,12 @@ p {
     position: relative;
   }
 
-  /*  */
+  /* Page des projets */
+
+  .projetsContainer {
+    margin: 4rem 8rem 0 8rem;
+  }
+
 
 
 

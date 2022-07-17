@@ -1,14 +1,16 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
+import BoutonProjets from './BoutonProjets'
 
 const Projets = () => {
   return (
     <div>
       <Header />
-      <div> {/* temporaire !!!!! */}
+      <div className='projetsContainer'>
+        <BoutonProjets />
+        {/* temporaire !!!!! */}
         <h1 style={{ textAlign: 'center' }}>Comming soon</h1>
-        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis ex excepturi ducimus</h1>
       </div>
       <Footer />
     </div>
