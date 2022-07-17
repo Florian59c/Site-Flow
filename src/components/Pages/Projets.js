@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from './Header'
-import Footer from './Footer'
-import BoutonProjets from './BoutonProjets'
+import Header from '../Composants/Header'
+import Footer from '../Composants/Footer'
+import BoutonProjets from '../Composants/BoutonProjets'
 
 const Projets = () => {
   return (

@@ -1,9 +1,9 @@
 import React from 'react';
 // import { useHistory } from "react-router-dom";
 import { Col, Row } from 'antd';
-import AN from '../img/Drapeau-Anglais.png';
-import JP from '../img/Drapeau-Japonais.png';
-import CV from '../fichiers/CV - Cagnon Florian.pdf';
+import AN from '../../img/Drapeau-Anglais.png';
+import JP from '../../img/Drapeau-Japonais.png';
+import CV from '../../fichiers/CV - Cagnon Florian.pdf';
 
 const Footer = () => {
 
