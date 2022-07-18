@@ -1,17 +1,10 @@
 import React from 'react';
-// import { useHistory } from "react-router-dom";
 import { Col, Row } from 'antd';
 import AN from '../../img/Drapeau-Anglais.png';
 import JP from '../../img/Drapeau-Japonais.png';
 import CV from '../../fichiers/CV - Cagnon Florian.pdf';
 
 const Footer = () => {
-
-    // const history = useHistory();
-    // const redirection = () =>{ 
-    //   let url = "https://www.google.fr/";
-    //   history.push(url);
-    // }
 
     return (
         <div className='footer'>
@@ -23,7 +16,6 @@ const Footer = () => {
                         </Col>
                         <Col span={24}>
                             <a href="https://www.linkedin.com/in/florian-cagnon-dev-web-fullstack/" target="_blank" rel="noreferrer noopener"><p>LinkedIn</p></a>
-                            {/* <p onClick={redirection}>LinkedIn</p> */}
                         </Col>
                     </Row>
                 </Col>
