@@ -1,16 +1,24 @@
-import React from 'react'
+import React from 'react';
 import Header from '../Composants/Header'
 import Footer from '../Composants/Footer'
 import BoutonProjets from '../Composants/BoutonProjets'
+import ListeProjets from '../Classes/ListeProjets';
 
 const Projets = () => {
+
+  const listProjets = ListeProjets.map(projet => {
+    return (
+      <BoutonProjets key={projet.id}
+        titre={projet.titre}
+      />
+    )
+  })
+
   return (
     <div>
       <Header />
       <div className='projetsContainer'>
-        <BoutonProjets />
-        {/* temporaire !!!!! */}
-        <h1 style={{ textAlign: 'center' }}>Comming soon</h1>
+        {listProjets}
       </div>
       <Footer />
     </div>

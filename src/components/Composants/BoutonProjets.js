@@ -1,10 +1,12 @@
 import React from 'react'
 
-const boutonProjets = () => {
+const boutonProjets = ({ titre }) => {
     return (
         <div className='boutonProjets'>
             <button>
-                <h1>Présentation du site</h1>
+                <h1>
+                    {titre}
+                </h1>
             </button>
         </div>
     )
