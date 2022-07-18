@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const boutonProjets = ({ titre, id }) => {
+const boutonProjets = ({ titre, url }) => {
     return (
         <div className='boutonProjets'>
-            <Link to={`/details/${id}`}>
+            <Link to={`/${url}`}>
                 <button>
                     <h1>
                         {titre}

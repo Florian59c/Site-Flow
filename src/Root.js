@@ -13,7 +13,7 @@ const Root = () => {
             <Switch>
                 <Route exact path="/" component={App} />
                 <Route path="/projets" component={Projets} />
-                <Route path="/details/:id" component={DetailsProjets} />
+                <Route path="/:url" component={DetailsProjets} />
                 <Route component={NotFound} />
             </Switch>
         </BrowserRouter>
