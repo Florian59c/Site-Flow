@@ -149,14 +149,15 @@ p {
   margin: 12rem 3rem 0 3rem;
 }
 
+.projetsContainer hr {
+  margin: 0 4rem 4rem 4rem;
+  border: 0.2rem solid rgb(83, 83, 92);
+  background-color: rgb(83, 83, 92);
+  border-radius: 2rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem black;
+}
 
-
-
-
-
-
-
-/* boutons de la page projets */
+/* boutons de la page projets ET details projets*/
 
 .boutonProjets button {
   display: inline-block;
@@ -167,6 +168,7 @@ p {
   box-shadow: 0 1rem 1rem 0 rgb(0, 0, 0, 0.3);
   background: linear-gradient(rgb(99, 99, 110), rgb(59, 61, 70));
   box-sizing: border-box;
+  margin-bottom: 4rem;
 }
 
 .boutonProjets h1 {
@@ -185,6 +187,14 @@ p {
 .boutonProjets h1:hover {
   color: white;
 }
+
+/* page des details de projets */
+
+
+
+
+
+
 
 
 
@@ -211,8 +221,14 @@ p {
   border-radius: 10rem;
 }
 
+/* pour les ecran superieur au mobile */
 @media screen and (min-width: 576px) {
 
+}
+
+/* pour les ecran superieur au mobile ET tablettes */
+@media screen and (min-width: 992px) {
+  
   /* header */
 
   .header {
@@ -227,9 +243,20 @@ p {
     margin: 4rem 8rem 0 8rem;
   }
 
+  /* rajoute un espacement sur les cotés pour dissocier le 2 parties */
+  .projets1er .boutonProjets{
+    margin: 0 8rem;
+  }
+  
+  .projets1er {
+    margin-bottom: 4rem;
+  }
 
-
-
+  /* retire la barre hr lorsque l'ecran est plus grand que le telephone */
+  .projetsContainer hr {
+    display: none;
+  }
+  
   /* footer */
 
   /* padding un peu plus grand sur les ecrans au dessus du tel */

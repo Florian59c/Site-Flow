@@ -3,6 +3,7 @@ import Header from '../Composants/Header';
 import Footer from '../Composants/Footer';
 import BoutonProjets from '../Composants/BoutonProjets';
 import ListeProjets from '../Classes/ListeProjets';
+import { Col, Row } from 'antd';
 
 const Projets = () => {
 
@@ -28,7 +29,9 @@ const Projets = () => {
   // sera utile pour les dissocier des 2 premiers - pour ma mise en page
   const listProjets = ListeProjets.slice(2).map(projet => {
     return (
-      boutonProjets(projet)
+      <Col xs={24} lg={12}>
+        {boutonProjets(projet)}
+      </Col>
     )
   })
 
@@ -39,8 +42,11 @@ const Projets = () => {
         <div className='projets1er'>
           {listPresentations}
         </div>
+        <hr />
         <div className='projets2nd'>
-          {listProjets}
+          <Row justify='space-between' gutter={40}>
+            {listProjets}
+          </Row>
         </div>
       </div>
       <Footer />
