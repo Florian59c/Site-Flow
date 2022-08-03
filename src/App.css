@@ -206,8 +206,7 @@ p {
 }
 
 .detailsProjetsContainer h1,
-.detailsProjetsContainer h2,
-.detailsProjetsContainer h3 {
+.detailsProjetsContainer h2, h3 {
   text-align: center;
   font-weight: bold;
   margin: 2rem 0;
@@ -221,11 +220,11 @@ p {
   font-size: 6rem;
 }
 
-.detailsProjetsContainer h3 {
+h3 {
 margin-top: 5rem;
 }
 
-.detailsProjetsContainer h3,
+h3,
 .detailsProjetsContainer .listTechno {
   font-size: 2.5rem;
 }
@@ -233,6 +232,7 @@ margin-top: 5rem;
 .detailsProjetsContainer p {
   text-align: justify;
   font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .detailsProjetsContainer .listTechno {
@@ -321,7 +321,7 @@ margin-top: 5rem;
     flex-direction: row-reverse;
   }
 
-  .detailsProjetsContainer .boutonProjets {
+  .boutonRedirection .boutonProjets {
     margin: 0 4rem;
   }
 

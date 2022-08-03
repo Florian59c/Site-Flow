@@ -15,11 +15,112 @@ const DetailsProjets = () => {
     return projet.url === url
   })
 
+  // verifie si il y a du contenu dans la section details de mon enregistrement
+  // si c'est le cas, il affiche le paragraphe, sinon il n'affiche rien (pour ne pas mettre le titre sans son contenu)
+  const existDetails = () => {
+    if (projetTrouver.details !== "") {
+      return (
+        <div>
+          <h2>Plus de détails</h2>
+          <p>{projetTrouver.details}</p>
+        </div>
+      )
+    }
+  };
+
+  // fonction permettant de vérifier si les liens des 2 boutons existe
+  // si les 2 existes : affiche les deux
+  // si seulement 1 existe : il est afficher avec un style pour le centrer
+  // si aucun existe : n'affiche rien (pour ne pas avoir de titre sans boutons)
+  const existBoutons = () => {
+    if (projetTrouver.lienDocumentation && projetTrouver.lienSite !== "") {
+      return (
+        <div>
+          <div>
+            <h3>Pour avoir encore plus d'informations, vous pouvez lire la documentation complète du projet ou le tester grâce aux boutons suivants !</h3>
+          </div>
+          <div className='boutonRedirection'>
+            <Row>
+              <Col xs={24} lg={12}>
+                <div className='boutonProjets'>
+                  <a href={projetTrouver.lienDocumentation} target="_blank" rel="noreferrer noopener">
+                    <button>
+                      <h1>
+                        Documentation sur {projetTrouver.nom}
+                      </h1>
+                    </button>
+                  </a>
+                </div>
+              </Col>
+              <Col xs={24} lg={12}>
+                <div className='boutonProjets'>
+                  <a href={projetTrouver.lienSite} target="_blank" rel="noreferrer noopener">
+                    <button>
+                      <h1>
+                        Découvrir {projetTrouver.nom}
+                      </h1>
+                    </button>
+                  </a>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </div>
+      )
+    } else if (projetTrouver.lienDocumentation !== "") {
+      return (
+        <div>
+          <div>
+            <h3>Pour avoir encore plus d'informations, vous pouvez lire la documentation complète du projet ou le tester grâce aux boutons suivants !</h3>
+          </div>
+          <div className='boutonRedirection'>
+            <Row justify='center'>
+              <Col xs={24} lg={12}>
+                <div className='boutonProjets'>
+                  <a href={projetTrouver.lienDocumentation} target="_blank" rel="noreferrer noopener">
+                    <button>
+                      <h1>
+                        Documentation sur {projetTrouver.nom}
+                      </h1>
+                    </button>
+                  </a>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </div>
+      )
+    } else if (projetTrouver.lienSite !== "") {
+      return (
+        <div>
+          <div>
+            <h3>Pour avoir encore plus d'informations, vous pouvez lire la documentation complète du projet ou le tester grâce aux boutons suivants !</h3>
+          </div>
+          <div className='boutonRedirection'>
+            <Row justify='center'>
+              <Col xs={24} lg={12}>
+                <div className='boutonProjets'>
+                  <a href={projetTrouver.lienSite} target="_blank" rel="noreferrer noopener">
+                    <button>
+                      <h1>
+                        Découvrir {projetTrouver.nom}
+                      </h1>
+                    </button>
+                  </a>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </div>
+      )
+    }
+  }
+
   return (
     <div>
       <Header />
       {/* la classe "projetsContainer" applique les meme marges et les meme style sur les bouton que sur la page Projets */}
-      <div className='projetsContainer '>
+      <div className='projetsContainer'>
         <div className='detailsProjetsContainer'>
           <div className='titreProjet'>
             <h1>{projetTrouver.nom}</h1>
@@ -36,38 +137,9 @@ const DetailsProjets = () => {
               </Col>
             </Row>
           </div>
-          <div>
-            <h2>Plus de détails</h2>
-            <p>{projetTrouver.details}</p>
-          </div>
-          <div>
-            <h3>Pour avoir encore plus d'informations, vous pouvez lire la documentation complète du projet ou le tester grâce aux boutons suivants !</h3>
-          </div>
+          {existDetails()}
         </div>
-        <div className='boutonRedirection'>
-          <Row>
-            <Col xs={24} lg={12}>
-              <div className='boutonProjets'>
-                <button>
-                  <h1>
-                    Documentation sur {projetTrouver.nom}
-                  </h1>
-                </button>
-              </div>
-            </Col>
-            <Col xs={24} lg={12}>
-              <div className='boutonProjets'>
-                <a href="https://www.google.fr/">
-                  <button>
-                    <h1>
-                      Découvrir {projetTrouver.nom}
-                    </h1>
-                  </button>
-                </a>
-              </div>
-            </Col>
-          </Row>
-        </div>
+        {existBoutons()}
       </div>
       <Footer />
     </div>

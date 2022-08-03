@@ -8,8 +8,8 @@ const ListeProjets = [
         listLangages: "React / Git",
         presentation: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus inventore, sunt laboriosam facere molestias unde ea nisi nihil atque quia obcaecati libero ab, reprehenderit mollitia assumenda, fugiat quam sint magni.",
         details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus inventore, sunt laboriosam facere molestias unde ea nisi nihil atque quia obcaecati libero ab, reprehenderit mollitia assumenda, fugiat quam sint magni.",
-        lienDocumentation: "",
-        lienSite: ""
+        lienDocumentation: "https://www.google.fr/",
+        lienSite: "https://www.google.fr/"
     },
     {
         id: 1,
