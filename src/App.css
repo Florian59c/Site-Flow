@@ -206,7 +206,8 @@ p {
 }
 
 .detailsProjetsContainer h1,
-.detailsProjetsContainer h2, h3 {
+.detailsProjetsContainer h2,
+h3 {
   text-align: center;
   font-weight: bold;
   margin: 2rem 0;
@@ -221,7 +222,7 @@ p {
 }
 
 h3 {
-margin-top: 5rem;
+  margin-top: 5rem;
 }
 
 h3,
@@ -257,11 +258,11 @@ h3,
 }
 
 .projetIntrouvable h2 {
- color: white;
-font-size: 6rem;
-font-weight: bold;
-text-align: center;
-padding: 4rem;
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 4rem;
 }
 
 .projetIntrouvable button {
@@ -290,8 +291,23 @@ padding: 4rem;
   border-radius: 10rem;
 }
 
-/* pour les ecran superieur au mobile */
-@media screen and (min-width: 576px) {}
+/* Page NotFound */
+
+.notFoundContainer {
+  padding: 4rem;
+  text-align: center;
+}
+
+.notFoundContainer h1 {
+  color: white;
+  font-size: 6rem;
+  margin: 4rem 0;
+}
+
+.notFoundContainer img {
+  width: 40rem;
+}
+
 
 /* pour les ecran superieur au mobile ET tablettes */
 @media screen and (min-width: 992px) {
@@ -334,20 +350,20 @@ padding: 4rem;
     margin: 0 4rem;
   }
 
-/* partie projet introuvable de la page DetailsProjets */
+  /* partie projet introuvable de la page DetailsProjets */
 
-/* enleve les margin de la classe projetsContainer (utile pour les bouton, mais pas pour le titre) */
-.projetIntrouvable {
-  margin: 0;
-}
+  /* enleve les margin de la classe projetsContainer (utile pour les bouton, mais pas pour le titre) */
+  .projetIntrouvable {
+    margin: 0;
+  }
 
-.projetIntrouvable h2 {
-font-size: 10rem;
-}
+  .projetIntrouvable h2 {
+    font-size: 10rem;
+  }
 
-.projetIntrouvable button {
-  padding: 0 2rem;
-}
+  .projetIntrouvable button {
+    padding: 0 2rem;
+  }
 
   /* footer */
 
@@ -358,5 +374,15 @@ font-size: 10rem;
 
   .footer .copyright {
     font-size: 2rem;
+  }
+
+  /* Page NotFound */
+
+  .notFoundContainer h1 {
+    font-size: 10rem;
+  }
+
+  .notFoundContainer img {
+    width: 50rem;
   }
 }
