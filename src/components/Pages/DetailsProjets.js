@@ -1,9 +1,10 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Header from '../Composants/Header';
 import Footer from '../Composants/Footer';
 import ListeProjets from '../Classes/ListeProjets';
 import { Col, Row } from 'antd';
+
 // projetTrouver.nomImage
 const DetailsProjets = () => {
 
@@ -118,30 +119,47 @@ const DetailsProjets = () => {
 
   return (
     <div>
-      <Header />
-      {/* la classe "projetsContainer" applique les meme marges et les meme style sur les bouton que sur la page Projets */}
-      <div className='projetsContainer'>
-        <div className='detailsProjetsContainer'>
-          <div className='titreProjet'>
-            <h1>{projetTrouver.nom}</h1>
+      {/* le ternaire verifie que l'on a bien trouvé le contenu de l'enregistrement via l'url (impossible à moins de changer directement l'url)
+      ça permet d'éviter une page noire si un utilisateur decide de modifier l'url et lui affiche un message d'erreur */}
+      {projetTrouver !== undefined ?
+        <div>
+          <Header />
+          {/* la classe "projetsContainer" applique les meme marges et les meme style sur les bouton que sur la page Projets */}
+          <div className='projetsContainer'>
+            <div className='detailsProjetsContainer'>
+              <div className='titreProjet'>
+                <h1>{projetTrouver.nom}</h1>
+              </div>
+              <div>
+                <Row className='description' justify='center' gutter={40}>
+                  <Col lg={12}>
+                    <img src={projetTrouver.lienImage} alt="Capture décran du projet" />
+                    <p className='listTechno'>{projetTrouver.listLangages}</p>
+                  </Col>
+                  <Col lg={12}>
+                    <h2>Présentation</h2>
+                    <p>{projetTrouver.presentation}</p>
+                  </Col>
+                </Row>
+              </div>
+              {existDetails()}
+            </div>
+            {existBoutons()}
           </div>
-          <div>
-            <Row className='description' justify='center' gutter={40}>
-              <Col lg={12}>
-                <img src={projetTrouver.lienImage} alt="Capture décran du projet" />
-                <p className='listTechno'>{projetTrouver.listLangages}</p>
-              </Col>
-              <Col lg={12}>
-                <h2>Présentation</h2>
-                <p>{projetTrouver.presentation}</p>
-              </Col>
-            </Row>
-          </div>
-          {existDetails()}
+          <Footer />
         </div>
-        {existBoutons()}
-      </div>
-      <Footer />
+        :
+        <div className='projetsContainer projetIntrouvable'>
+          <h2>Le projet que vous souhaitez consulter n'existe pas !</h2>
+          <div className='boutonProjets'>
+            <Link to={"/projets"}>
+              <button>
+                <h1>Revenir sur la liste des projets</h1>
+              </button>
+            </Link>
+          </div>
+        </div>
+      }
     </div>
   )
 }

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const boutonProjets = ({ titre, url }) => {
     return (
         <div className='boutonProjets'>
-            <Link to={`/${url}`}>
+            <Link to={`/detailsprojet/${url}`}>
                 <button>
                     <h1>
                         {titre}
