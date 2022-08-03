@@ -7,7 +7,9 @@ const ListeProjets = [
         lienImage: "https://www.radiolac.ch/wp-content/uploads/2022/07/20220723203238492.jpg",
         listLangages: "React / Git",
         presentation: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus inventore, sunt laboriosam facere molestias unde ea nisi nihil atque quia obcaecati libero ab, reprehenderit mollitia assumenda, fugiat quam sint magni.",
-        details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus inventore, sunt laboriosam facere molestias unde ea nisi nihil atque quia obcaecati libero ab, reprehenderit mollitia assumenda, fugiat quam sint magni."
+        details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus inventore, sunt laboriosam facere molestias unde ea nisi nihil atque quia obcaecati libero ab, reprehenderit mollitia assumenda, fugiat quam sint magni.",
+        lienDocumentation: "",
+        lienSite: ""
     },
     {
         id: 1,
@@ -15,9 +17,11 @@ const ListeProjets = [
         titre: "En cours...",
         url: "en-cours",
         lienImage: "",
-        listLangages: "",
-        presentation: "",
-        details: ""
+        listLangages: "Technos à définir...",
+        presentation: "Projet personnel en cour de construction. Plus d'informations à venir...",
+        details: "",
+        lienDocumentation: "",
+        lienSite: ""
     },
     {
         id: 2,
@@ -27,7 +31,9 @@ const ListeProjets = [
         lienImage: "",
         listLangages: "",
         presentation: "",
-        details: ""
+        details: "",
+        lienDocumentation: "",
+        lienSite: ""
     },
     {
         id: 3,
@@ -37,7 +43,9 @@ const ListeProjets = [
         lienImage: "",
         listLangages: "",
         presentation: "",
-        details: ""
+        details: "",
+        lienDocumentation: "",
+        lienSite: ""
     },
     {
         id: 4,
@@ -47,7 +55,9 @@ const ListeProjets = [
         lienImage: "",
         listLangages: "",
         presentation: "",
-        details: ""
+        details: "",
+        lienDocumentation: "",
+        lienSite: ""
     },
     {
         id: 5,
@@ -57,7 +67,9 @@ const ListeProjets = [
         lienImage: "",
         listLangages: "",
         presentation: "",
-        details: ""
+        details: "",
+        lienDocumentation: "",
+        lienSite: ""
     },
     {
         id: 6,
@@ -67,7 +79,9 @@ const ListeProjets = [
         nomlienImage: "",
         listLangages: "",
         presentation: "",
-        details: ""
+        details: "",
+        lienDocumentation: "",
+        lienSite: ""
     }
 ];
 

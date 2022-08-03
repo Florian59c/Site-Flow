@@ -182,6 +182,7 @@ p {
   background-color: #585b65;
   box-shadow: 0 0.5rem 0.5rem 0 rgb(0, 0, 0, 0.1);
   background: linear-gradient(rgb(119, 119, 130), rgb(79, 81, 90));
+  cursor: pointer;
 }
 
 .boutonProjets h1:hover {
@@ -189,6 +190,65 @@ p {
 }
 
 /* page des details de projets */
+
+.detailsProjetsContainer {
+  /* le positionnement et le z-index permette de passer le contenu (texte + image) par dessous le header lors du scroll (de base, il passe par dessus et cache le header */
+  position: relative;
+  z-index: -1;
+}
+
+.detailsProjetsContainer h1,
+h2,
+h3,
+p {
+  margin: 0;
+  color: white;
+}
+
+.detailsProjetsContainer h1,
+.detailsProjetsContainer h2,
+.detailsProjetsContainer h3 {
+  text-align: center;
+  font-weight: bold;
+  margin: 2rem 0;
+}
+
+.detailsProjetsContainer .titreProjet h1 {
+  font-size: 8rem;
+}
+
+.detailsProjetsContainer h2 {
+  font-size: 6rem;
+}
+
+.detailsProjetsContainer h3 {
+margin-top: 5rem;
+}
+
+.detailsProjetsContainer h3,
+.detailsProjetsContainer .listTechno {
+  font-size: 2.5rem;
+}
+
+.detailsProjetsContainer p {
+  text-align: justify;
+  font-size: 2rem;
+}
+
+.detailsProjetsContainer .listTechno {
+  text-align: end;
+  padding: 1rem 1rem 0 0;
+}
+
+.detailsProjetsContainer img {
+  width: 100%;
+}
+
+.detailsProjetsContainer .boutonProjets h1 {
+  margin: 0;
+}
+
+
 
 
 
@@ -222,13 +282,11 @@ p {
 }
 
 /* pour les ecran superieur au mobile */
-@media screen and (min-width: 576px) {
-
-}
+@media screen and (min-width: 576px) {}
 
 /* pour les ecran superieur au mobile ET tablettes */
 @media screen and (min-width: 992px) {
-  
+
   /* header */
 
   .header {
@@ -244,10 +302,10 @@ p {
   }
 
   /* rajoute un espacement sur les cotés pour dissocier le 2 parties */
-  .projets1er .boutonProjets{
+  .projets1er .boutonProjets {
     margin: 0 8rem;
   }
-  
+
   .projets1er {
     margin-bottom: 4rem;
   }
@@ -256,7 +314,29 @@ p {
   .projetsContainer hr {
     display: none;
   }
-  
+
+  /* page des details de projets */
+
+  .detailsProjetsContainer .description {
+    flex-direction: row-reverse;
+  }
+
+  .detailsProjetsContainer .boutonProjets {
+    margin: 0 4rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* footer */
 
   /* padding un peu plus grand sur les ecrans au dessus du tel */
