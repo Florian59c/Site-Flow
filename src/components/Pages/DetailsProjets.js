@@ -72,7 +72,7 @@ const DetailsProjets = () => {
       return (
         <div>
           <div>
-            <h3>Pour avoir encore plus d'informations, vous pouvez lire la documentation complète du projet ou le tester grâce aux boutons suivants !</h3>
+            <h3>Pour avoir encore plus d'informations, vous pouvez lire la documentation complète du projet !</h3>
           </div>
           <div className='boutonRedirection'>
             <Row justify='center'>
@@ -95,7 +95,7 @@ const DetailsProjets = () => {
       return (
         <div>
           <div>
-            <h3>Pour avoir encore plus d'informations, vous pouvez lire la documentation complète du projet ou le tester grâce aux boutons suivants !</h3>
+            <h3>Pour avoir encore plus d'informations, vous pouvez tester le projet grâce au bouton suivant !</h3>
           </div>
           <div className='boutonRedirection'>
             <Row justify='center'>

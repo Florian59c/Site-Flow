@@ -1,0 +1,2 @@
+max : vertical = 1 pour horizontal = 1.5
+min : vertical = 1 pour horizontal = 1.75
