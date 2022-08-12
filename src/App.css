@@ -214,25 +214,25 @@ h3 {
 }
 
 .detailsProjetsContainer .titreProjet h1 {
-  font-size: 8rem;
+  font-size: 7rem;
 }
 
 .detailsProjetsContainer h2 {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 h3 {
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 h3,
 .detailsProjetsContainer .listTechno {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .detailsProjetsContainer p {
   text-align: justify;
-  font-size: 2rem;
+  /* font-size: 2rem; */
   margin-bottom: 2rem;
 }
 
@@ -243,6 +243,10 @@ h3,
 
 .detailsProjetsContainer img {
   width: 100%;
+}
+
+.detailsProjetsContainer .description div {
+  align-items: center;
 }
 
 .detailsProjetsContainer .boutonProjets h1 {
@@ -279,10 +283,15 @@ h3,
   border-top: 0.4rem solid rgb(14, 13, 11);
 }
 
-/* .footer a {
+.footer a p {
   text-decoration: none;
-  color: rgb(235, 235, 235);
-} */
+  color: rgb(16, 121, 190);
+  font-weight: bold;
+}
+
+.footer .copyright {
+  font-size: 1rem;
+}
 
 .footer img {
   width: 3rem;
@@ -373,6 +382,10 @@ h3,
   }
 
   .footer .copyright {
+    font-size: 2rem;
+  }
+
+  .footer a p {
     font-size: 2rem;
   }
 

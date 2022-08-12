@@ -137,8 +137,10 @@ const DetailsProjets = () => {
                     <p className='listTechno'>{projetTrouver.listLangages}</p>
                   </Col>
                   <Col lg={12}>
+                    <div>
                     <h2>Présentation</h2>
                     <p>{projetTrouver.presentation}</p>
+                    </div>
                   </Col>
                 </Row>
               </div>

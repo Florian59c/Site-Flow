@@ -17,7 +17,7 @@ const ListeProjets = [
         presentation: "Ce site est fait avec React et est responsive. Il possède trois pages en tout : la page d’accueil, la page listant mes projets ainsi que la page donnant des détails sur chaque projet.\nLa page d’accueil possède deux modes. La version « Light », qui est celle par défaut et la version « Dark » qui n’apparaît qu’après un clic sur le bouton. Le changement se fait grâce à la mise à jour du state (qui est un bouléen) ainsi qu’à des fonctions ternaires appliquées sur mes noms de classes afin de changer les styles.\nLa page listant mes projets est générée dynamiquement grâce à un « .map » effectué dans un tableau d’enregistrement. Ce tableau liste toutes les informations de mes projets.\nPour la page des détails sur un projet, elle est générée dynamiquement via une comparaison avec l’URL répertorié dans l’enregistrement et celui passé dans les « props ». Donc, via un « .find », je récupère les informations demandées dans un tableau pour les afficher à l’écran.",
         details: "Sur la page donnant les détails d’un projet, plusieurs conditions sont effectuées pour vérifier si le contenu est vide, afin d’adapter la page et de la rendre agréable à consulter dans tous les cas de figure possible.\nUn ternaire est également appliqué à toute la page pour gérer un changement d’URL de l’utilisateur et d'afficher un message d’erreur et une redirection.\nIl existe également une page « Not Found » qui apparaît lorsqu’une page n’est pas trouvée.\nPour finir, le « Header » et le « Footeur » sont des composants réutilisés sur une grande partie du site.",
         lienDocumentation: "",
-        lienSite: "https://www.google.fr/"
+        lienSite: "https://le-site-de-flow.web.app/"
     },
     {
         id: 1,
