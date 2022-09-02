@@ -7,6 +7,9 @@ import loup from './img/Loup.png';
 import jour from './img/Ciel-bleu.jpg';
 import nuit from './img/Ciel-nuit.jpg';
 
+// npm run build : creer un dossier build
+// firebase deploy : envoi sur l'hébergeur firebase
+
 export default function App() {
 
   // initialisation de ma state isDark a false (booleen)
