@@ -17,6 +17,9 @@ const Footer = () => {
                         <Col span={24}>
                             <a href="https://www.linkedin.com/in/florian-cagnon-dev-web-fullstack/" target="_blank" rel="noreferrer noopener"><p>LinkedIn</p></a>
                         </Col>
+                        <Col span={24}>
+                            <a href="https://github.com/Florian59c?tab=repositories" target="_blank" rel="noreferrer noopener"><p>GitHub</p></a>
+                        </Col>
                     </Row>
                 </Col>
                 <Col>

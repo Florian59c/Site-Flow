@@ -26,7 +26,7 @@ export default function App() {
   const boutonSwitch = () => {
     return (
       <button className={`bouton ${isDark ? "boutonDark" : "boutonLight"}`} onClick={changeMode}>
-        {isDark ? <p>Light Mode ?</p> : <p>Dark Mode</p>}
+        {isDark ? <p>Mes projets</p> : <p>Dark Mode</p>}
       </button>
     )
   };

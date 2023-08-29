@@ -44,7 +44,7 @@ const Projets = () => {
         </div>
         <hr />
         <div className='projets2nd'>
-          <Row justify='space-between' gutter={40}>
+          <Row justify='center' gutter={40} >
             {listProjets}
           </Row>
         </div>

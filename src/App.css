@@ -115,6 +115,7 @@ p {
   border-bottom: 0.4rem solid rgb(179, 179, 179);
   border-radius: 0 0 2rem 2rem;
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   right: 0;
@@ -146,7 +147,7 @@ p {
 /* Styles de la page des projets */
 
 .projetsContainer {
-  margin: 12rem 3rem 0 3rem;
+  margin: 20rem 3rem 0 3rem;
 }
 
 .projetsContainer hr {
@@ -291,6 +292,7 @@ h3,
 
 .footer .copyright {
   font-size: 1rem;
+  display: none;
 }
 
 .footer img {
@@ -317,6 +319,19 @@ h3,
   width: 40rem;
 }
 
+/* pour les ecran superieur au mobile "standard" et inférieur aux tablettes */
+@media screen and (min-width: 416px) {
+  .projetsContainer {
+    margin-top: 12rem;
+  }
+}
+
+/* pour les ecran superieur au mobile */
+@media screen and (min-width: 500px) {
+  .footer .copyright {
+    display: contents;
+  }
+}
 
 /* pour les ecran superieur au mobile ET tablettes */
 @media screen and (min-width: 992px) {
@@ -387,6 +402,10 @@ h3,
 
   .footer a p {
     font-size: 2rem;
+  }
+
+  .footer .lien p {
+    font-size: 1.6rem;
   }
 
   /* Page NotFound */

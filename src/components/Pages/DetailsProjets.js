@@ -41,13 +41,13 @@ const DetailsProjets = () => {
             <h3>Pour avoir encore plus d'informations, vous pouvez lire la documentation complète du projet ou le tester grâce aux boutons suivants !</h3>
           </div>
           <div className='boutonRedirection'>
-            <Row>
+            <Row align='middle'>
               <Col xs={24} lg={12}>
                 <div className='boutonProjets'>
                   <a href={projetTrouver.lienDocumentation} target="_blank" rel="noreferrer noopener">
                     <button>
                       <h1>
-                        Documentation sur {projetTrouver.nom}
+                        Le GitHub du projet
                       </h1>
                     </button>
                   </a>
@@ -81,7 +81,7 @@ const DetailsProjets = () => {
                   <a href={projetTrouver.lienDocumentation} target="_blank" rel="noreferrer noopener">
                     <button>
                       <h1>
-                        Documentation sur {projetTrouver.nom}
+                        Le GitHub du projet
                       </h1>
                     </button>
                   </a>
@@ -138,8 +138,8 @@ const DetailsProjets = () => {
                   </Col>
                   <Col lg={12}>
                     <div>
-                    <h2>Présentation</h2>
-                    <p>{projetTrouver.presentation}</p>
+                      <h2>Présentation</h2>
+                      <p>{projetTrouver.presentation}</p>
                     </div>
                   </Col>
                 </Row>
