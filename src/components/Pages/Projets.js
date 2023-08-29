@@ -19,7 +19,7 @@ const Projets = () => {
 
   // fait appel à mes 2 premiers projets en créant 2 boutons
   // sera utile pour les dissocier pour ma mise en page
-  const listPresentations = ListeProjets.slice(0, 2).map(projet => {
+  const listPresentations = ListeProjets.slice(0, 1).map(projet => {
     return (
       boutonProjets(projet)
     )
@@ -27,7 +27,7 @@ const Projets = () => {
 
   // fait appel aux projets à partir du 3ème et créé autant de bouton q'il y a de projet
   // sera utile pour les dissocier des 2 premiers - pour ma mise en page
-  const listProjets = ListeProjets.slice(2).map(projet => {
+  const listProjets = ListeProjets.slice(1).map(projet => {
     return (
       <Col xs={24} lg={12}>
         {boutonProjets(projet)}
