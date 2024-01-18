@@ -1,5 +1,5 @@
 import React from 'react';
-import App from './App';
+import Home from './components/Pages/Home';
 import NotFound from './components/Pages/NotFound';
 import Projets from './components/Pages/Projets';
 import DetailsProjets from './components/Pages/DetailsProjets';
@@ -10,7 +10,8 @@ const Root = () => {
     return (
         <HashRouter>
             <Switch>
-                <Route exact path="/" component={App} />
+                {/* <Route exact path="/" component={App} /> */}
+                <Route exact path="/" component={Home} />
                 <Route path="/projets" component={Projets} />
                 <Route path="/detailsprojet/:url" component={DetailsProjets} />
                 <Route component={NotFound} />
