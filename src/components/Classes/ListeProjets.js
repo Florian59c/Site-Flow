@@ -6,6 +6,9 @@ import IMG_disney from "../../img/screenshot/Disney+.png";
 import IMG_search_cars from "../../img/screenshot/Search Cars.png";
 import IMG_clean3000 from "../../img/screenshot/Clean3000.png";
 import IMG_roll_dice from "../../img/screenshot/Roll Dice.png";
+import IMG_point_n_click from "../../img/screenshot/Point'n'Click.png";
+import IMG_copilote from "../../img/screenshot/Copilote.png";
+import IMG_weteknow from "../../img/screenshot/WeTeKnow.png";
 
 const ListeProjets = [
     {
@@ -14,11 +17,25 @@ const ListeProjets = [
         titre: "Présentation du site",
         url: "presentation-du-site",
         lienImage: IMG_site_de_Flow,
-        listLangages: "React / Git",
-        presentation: "Ce site est fait avec React et est responsive. Il possède trois pages en tout : la page d’accueil, la page listant mes projets ainsi que la page donnant des détails sur chaque projet.\nLa page d’accueil possède une brève description de l'application ainsi qu'un bouton de redirection permettant d'accéder à la lister des projets.\nLa page listant mes projets est générée dynamiquement grâce à un « .map » effectué dans un tableau d’enregistrement. Ce tableau liste toutes les informations de mes projets.\nPour la page des détails sur un projet, elle est générée dynamiquement via une comparaison avec l’URL répertorié dans l’enregistrement et celui passé dans les « props ». Donc, via un « .find », je récupère les informations demandées dans un tableau pour les afficher à l’écran.",
+        listLangages: "React / Git / Ant Design",
+        presentation: "Ce site est fait avec React et est responsive. Il possède trois pages en tout : la page d’accueil, la page listant mes projets ainsi que la page donnant des détails sur chaque projet.\nLa page d’accueil possède une brève description de l'application ainsi qu'un bouton de redirection permettant d'accéder à la liste des projets.\nLa page listant mes projets est générée dynamiquement grâce à un « .map » effectué dans un tableau d’enregistrement. Ce tableau liste toutes les informations de mes projets.\nPour la page des détails sur un projet, elle est générée dynamiquement via une comparaison avec l’URL répertorié dans l’enregistrement et celui passé dans les « props ». Donc, via un « .find », je récupère les informations demandées dans un tableau pour les afficher à l’écran.",
         details: "Sur la page donnant les détails d’un projet, plusieurs conditions sont effectuées pour vérifier si le contenu est vide, afin d’adapter la page et de la rendre agréable à consulter dans tous les cas de figure possible.\nUn ternaire est également appliqué à toute la page pour gérer un changement d’URL de l’utilisateur et d'afficher un message d’erreur et une redirection.\nIl existe également une page « Not Found » qui apparaît lorsqu’une page n’est pas trouvée.\nPour finir, le « Header » et le « Footeur » sont des composants réutilisés sur une grande partie du site.",
-        lienDocumentation: "https://github.com/Florian59c/Site-Flow",
+        lienGitHub: "https://github.com/Florian59c/Site-Flow",
         lienSite: "https://le-site-de-flow.web.app/"
+        // lienFigma: "",
+        // lienDocumentation: "",
+        // video : [
+        // {
+        //     id: 1,
+        //     name: "",
+        //     url: ""
+        // },
+        // {
+        //     id: 2,
+        //     name: "",
+        //     url: ""
+        // }
+        // ],
     },
     // {
     //     id: 1,
@@ -29,7 +46,19 @@ const ListeProjets = [
     //     listLangages: "Technos à définir...",
     //     presentation: "Projet personnel en cour de construction. Plus d'informations à venir...",
     //     details: "",
-    //     lienDocumentation: "",
+    //     lienGitHub: "",
+    //     lienSite: ""
+    // },
+    // {
+    //     id: 9,
+    //     nom: "WeTeKnow",
+    //     titre: "WeTeKnow",
+    //     url: "weteknow",
+    //     lienImage: IMG_weteknow,
+    //     listLangages: "React",
+    //     presentation: "???",
+    //     details: "???",
+    //     lienGitHub: "",
     //     lienSite: ""
     // },
     {
@@ -37,23 +66,23 @@ const ListeProjets = [
         nom: "Copilote",
         titre: "Copilote",
         url: "copilote",
-        lienImage: IMG_interrogation,
+        lienImage: IMG_copilote,
         listLangages: "React / React Native / GraphQL / Apollo / Docker / Typeorm / TypeScript / JWT / Jest / CI-CD",
-        presentation: "Copilote est le projet fil rouge réalisé en groupe pendant ma formation CDA à la « Wild Code School ». Il s'agit d'une application permettant de créer ou de rejoindre un covoiturage.\nIl possède un back et deux front pour le web (responsive) et pour l'application mobile (native). Le back utilise les technos « Type GraphQL », l'interface « Apollo », « TypeORM » et une base de données en « Postgres ». Le front utilise « React », « TypeScript », une authentification avec « JWT » et des tests unitaires avec « Jest ». Il y a aussi une partie mobile en « React Native » rajoutant des envoi de notifications. Le tout est « Dockerisé » et lié avec « Docker-Compose ». De plus, une « CI-CD » est configuré via les « GitHub Actions ».",
-        details: "Le projet est toujours en cours !",
-        lienDocumentation: "https://github.com/WildCodeSchool/2211-wns-neumann-copilot",
-        lienSite: ""
+        presentation: "Copilote est le projet fil rouge réalisé en groupe pendant ma formation CDA à la « Wild Code School ». Il s'agit d'une application permettant de créer ou de rejoindre un covoiturage.\nIl possède un back et deux front pour le web (responsive) et pour l'application mobile (native). Le back utilise les technos « Type GraphQL », l'interface « Apollo », « TypeORM » et une base de données en « Postgres ». Le front utilise « React », « TypeScript », une authentification avec « JWT » et des tests unitaires avec « Jest ». Il y a aussi une partie mobile en « React Native » dont le visuel et la manière de l'utiliser est différent. Le tout est « Dockerisé » et lié avec « Docker-Compose ». De plus, une « CI-CD » est configuré via les « GitHub Actions ».",
+        details: "C'est ce projet que j'ai choisi de présenter lors du passage de mon titre professionnel et sur lequel j'ai réalisé mon dossier de projet de fin de formation.",
+        lienGitHub: "https://github.com/WildCodeSchool/2211-wns-neumann-copilot",
+        lienSite: "https://neumann4.wns.wilders.dev/"
     },
     {
         id: 7,
         nom: "Point'n'Click",
         titre: "Point'n'Click",
         url: "point-n-click",
-        lienImage: IMG_interrogation,
+        lienImage: IMG_point_n_click,
         listLangages: "React / GraphQL / Apollo / Typeorm / TypeScript / JWT",
-        presentation: "Il s'agit d'un jeu d'enquête en point'n'click dans lequel il faut fouiller dans l'ordinateur d'une personne disparue.",
-        details: "Le projet est toujours en cours ! Mais le back est terminé et côté client, il est possible de s'authentifier.",
-        lienDocumentation: "https://github.com/Florian59c/Point-n-click",
+        presentation: "Il s'agit d'un jeu d'enquête en point'n'click dans lequel il faut fouiller dans l'ordinateur d'une personne disparue. Le jeu autorise la connexion et l'inscription d'utilisateur et permet d'enregistrer le temps que le joueur met pour terminer le jeu sous forme de « meilleur score ». De plus, un ranking est disponible à la fin du jeu et affiche le score et le pseudo des 10 meilleurs. La connexion n'est pas obligatoire pour jouer et terminer les enquêtes (seulement, le score ne sera pas enregistré dans ce cas).\n Diverses énigmes sont disponible et suivent un fil conducteur pour avancer dans le scénario. Ces énigmes sont essentiellement basées sur le visuel, la réflexion, la mémoire, et surtout, le clic !",
+        details: "Le projet est toujours en cours. Le back est terminé et fonctionne parfaitement. Côté front, il est possible de s'authentifier. Tous les visuels externes au jeu (les menus...) sont terminés ainsi que la première énigme. Les autres sont encore en cours de création et l'application n'est donc pas hébergée pour le moment.",
+        lienGitHub: "https://github.com/Florian59c/Point-n-click",
         lienSite: ""
     },
     {
@@ -63,22 +92,22 @@ const ListeProjets = [
         url: "roll-dice",
         lienImage: IMG_roll_dice,
         listLangages: "React / Typescript",
-        presentation: "Cette application permet aux utilisateurs de lancer des dés parmi un panele prédéfini.\nJ'ai choisi de créer ce projet pour davantage me familiariser avec TypeScript et parce que je suis adepte des jeux de plateaux et jeux de rôles.",
-        details: "",
-        lienDocumentation: "https://github.com/Florian59c/roll-dice",
+        presentation: "Cette application permet aux utilisateurs de lancer des dés parmi un panel prédéfini.\nL'application possède une page principale sur laquelle l'on choisie le dé que l'on souhaite lancer.\nUne fois le type de dé sélectionné, il est possible de le lancer ou le relancer, réinitialiser le lancer précédent ou changer de dé. Au clic sur le bouton « Lancer le dé », une animation se lance avant d'afficher le résultat. Le bouton « réinitialiser le dé » permet d'effacer un résultat et le bouton « Changer de dé » permet de revenir à la page principale.",
+        details: "J'ai choisi de créer ce projet pour davantage me familiariser avec TypeScript et parce que je suis adepte des jeux de plateaux et jeux de rôles.",
+        lienGitHub: "https://github.com/Florian59c/roll-dice",
         lienSite: "https://roll-dice-flow.web.app/"
     },
     {
         id: 5,
-        nom: "Clean3000",
-        titre: "Clean3000",
-        url: "clean3000",
-        lienImage: IMG_clean3000,
-        listLangages: "React / Git",
-        presentation: "Clean 3000 est un projet conçu en condition réel. Le but était d’informatiser un formulaire papier pour un client fictif représentant une société de lavage de vitres. Les demandes client étaient de pouvoir renseigner des informations (sur l’entreprise, le technicien et la date d’intervention, suivie de possibles commentaires), puis de les afficher automatiquement à l’écran pour en faire un « screenshot ». Les technologies et la mise en forme (le maquettage) étaient totalement libres (bien que nous étions limitées à des langages Front-end). Nous devions rendre le projet le soir même (8 heures de travail) afin de le présenter au client (toujours fictif) le lendemain.\nJ’ai fait le choix de React et d’envoyer les informations sur une page à part.",
-        details: "J’ai commencé par maquetter le projet sur « Figma ». Puis j’ai entamé le développement en « Mobile first », en m’inspirant de mes maquette.\nLa page principale contient un « Header », qui est le logo de la société cliente, et est un composant réutilisé pour la deuxième page. Elle contient, aussi, quatre formulaires que le technicien doit remplir. Un clic sur le bouton « enregistrer » envoi sur la seconde page avec les informations remplient précédemment.\nCette page ne contient que les informations récupérées via les « props ».",
-        lienDocumentation: "https://github.com/Florian59c/clean3000",
-        lienSite: ""
+        nom: "Disney +",
+        titre: "Disney +",
+        url: "disney+",
+        lienImage: IMG_disney,
+        listLangages: "React",
+        presentation: "Disney + est le premier projet que j’ai fait en React. De ce fait, il fonctionne grâce à la fonction « render » et ne contient aucun « Hooks ». De plus, les informations sont récupérées grâce à une API. Le but de ce projet était de me familiariser avec Reat en recréant une copie de la première version du site Disney +.\nLe site contient trois pages : la page d’accueil, une page contant les films triés par rapport aux company, et une page de description pour chaque film.\nLe « Header » et les boutons listant les conpany sont des composants réutilisés à plusieurs endroits. Le « Header » est utilisé sur toutes les pages et redirige sur la page d’accueil.",
+        details: "La page d’accueil est découpée en trois parties : les boutons des company qui permettent d’aller sur la page dédiée à chaque studio, la partie nouveauté qui affiche 6 films parmi les plus récentes recensés dans l’api, et la partie suggestion qui affiche 3 films ayant le paramètre activé dans l’api.\nCliquer sur le bouton d’un studio nous amène sur la page de la company, générée dynamiquement. Elle affiche la liste des films du studio.\nUn clic sur l’affiche d’un film, sur la page d’accueil ou la page du studio, enverra sur la page de description du film. Les descriptions y sont générées dynamiquement de la même manière que pour la page des company.\nLa partie « Flexbox » et responsive et géré grâce au système de grille d’ « Ant Design ».\nIl y a également une page « NotFound » qui affiche un message d’erreur lorsque l’URL est incorrect.",
+        lienGitHub: "https://github.com/Florian59c/Disney",
+        lienSite: "https://disney-fcdw.web.app/#/"
     },
     {
         id: 4,
@@ -88,21 +117,21 @@ const ListeProjets = [
         lienImage: IMG_search_cars,
         listLangages: "React Native",
         presentation: "Search Car est un projet en React Native. Il s’agit d’une application permettant de louer des véhicules.\nLa page d’accueil possède simplement un bouton indiquant le nombre de véhicules à découvrir.\nAppuyer dessus, permet d’accéder à la liste des véhicules. Les informations sont affichées de manière dynamique en faisant appel à un tableau d’enregistrement. Ce sont également des boutons permettant de consulter les détails du véhicule choisi.\nSur la page de détails, le véhicule est trouvé via les « props » et ses informations sont récupéré depuis le tableau dans un « state » afin de les afficher dynamiquement.",
-        details: "Search Car est le seul projet que j’ai fait en React Native et est, de ce fait, très basique. Il ne sera donc pas ajouté au Play Store en l’état et ne peut donc pas être tester.",
-        lienDocumentation: "https://github.com/Florian59c/Search_Cars",
+        details: "Search Car est le premier projet que j’ai fait en React Native et est, de ce fait, très basique. Je n'ai donc pas prévu de l'ajouté au Play Store en l’état.",
+        lienGitHub: "https://github.com/Florian59c/Search_Cars",
         lienSite: ""
     },
     {
         id: 3,
-        nom: "Disney +",
-        titre: "Disney +",
-        url: "disney+",
-        lienImage: IMG_disney,
-        listLangages: "React",
-        presentation: "Disney + est le premier projet que j’ai fait en React. De ce fait, il fonctionne grâce à la fonction « render » et ne contient aucun « Hooks ». De plus, les informations sont récupérées grâce à une API. Le but de ce projet était de me familiariser avec Reat en recréant une copie de la première version du site Disney +.\nLe site contient trois pages : la page d’accueil, une page contant les films triés par rapport aux company, et une page de description pour chaque film.\nLe « Header » et les boutons listant les conpany sont des composants réutilisés à plusieurs endroits. Le « Header » est utilisé sur toutes les pages et redirige sur la page d’accueil.",
-        details: "La page d’accueil est découpée en trois parties : les boutons des company qui permettent d’aller sur la page dédiée à chaque studio, la partie nouveauté qui affiche 6 films parmi les plus récentes recensés dans l’api, et la partie suggestion qui affiche 3 films ayant le paramètre activé dans l’api.\nCliquer sur le bouton d’un studio nous amène sur la page de la company, générée dynamiquement. Elle affiche la liste des films du studio.\nUn clic sur l’affiche d’un film, sur la page d’accueil ou la page du studio, enverra sur la page de description du film. Les descriptions y sont générées dynamiquement de la même manière que pour la page des company.\nLa partie « Flexbox » et responsive et géré grâce au système de grille d’ « Ant Design ».\nIl y a également une page « NotFound » qui affiche un message d’erreur lorsque l’URL est incorrect.",
-        lienDocumentation: "",
-        lienSite: "https://disney-fcdw.web.app/#/"
+        nom: "Clean3000",
+        titre: "Clean3000",
+        url: "clean3000",
+        lienImage: IMG_clean3000,
+        listLangages: "React / Git",
+        presentation: "Clean 3000 est un projet conçu en condition réel. Le but était d’informatiser un formulaire papier pour un client fictif représentant une société de lavage de vitres. Les demandes client étaient de pouvoir renseigner des informations (sur l’entreprise, le technicien et la date d’intervention, suivie de possibles commentaires), puis de les afficher automatiquement à l’écran pour en faire un « screenshot ». Les technologies et la mise en forme (le maquettage) étaient totalement libres (bien que nous étions limitées à des langages Front-end). Nous devions rendre le projet le soir même (8 heures de travail) afin de le présenter au client (toujours fictif) le lendemain.\nJ’ai fait le choix de React et d’envoyer les informations sur une page à part.",
+        details: "J’ai commencé par maquetter le projet sur « Figma ». Puis j’ai entamé le développement en « Mobile first », en m’inspirant de mes maquette.\nLa page principale contient un « Header », qui est le logo de la société cliente, et est un composant réutilisé pour la deuxième page. Elle contient, aussi, quatre formulaires que le technicien doit remplir. Un clic sur le bouton « enregistrer » envoi sur la seconde page avec les informations remplient précédemment.\nCette page ne contient que les informations récupérées via les « props ».",
+        lienGitHub: "https://github.com/Florian59c/clean3000",
+        lienSite: ""
     },
     {
         id: 2,
@@ -113,7 +142,7 @@ const ListeProjets = [
         listLangages: "HTML / CSS / JS / Git",
         presentation: "L’Hôtel Deluxe est un site qui permet de gérer les entrées et sorties d’un hôtel. Ce projet a été effectué en binôme avec l’aide de Git. Pour le bon déroulement du développement, nous avons découpé le site en deux : la partie « entrée » et la partie « sortie » que nous nous sommes repartie.\nTout le site est avant tout en HTML / CSS et est responsive. Git a été utilisé pour nous partager le travail au fur et à mesure des avancements de chacun. Puisque les styles étaient communs, nous nous étions mis d’accord sur les noms des classes à utiliser afin de séparer également le travail sur les styles.\nLa partie calcul est faite en JS et permet d’ajouter un client de l’hôtel, puis de lui dire le prix de son séjour au moment de son départ.",
         details: "Tout le site tient sur une seule page et est essentiellement constitué de « Front ». L’entrée du client se fait via un formulaire et les données sont temporairement enregistrées dans la page. Actualiser ou quitter la page effacera les données.\nEn sortie, il suffit d’avoir le nom et prénom du client pour que le calcul du prix se fasse avec les données enregistrées en entrée, puis le prix est affiché en bas de page.\nIl y a également les gestions d’erreurs dans le cas où le client ne serait pas trouvé. Un message d’erreur apparaîtra à la place du prix.",
-        lienDocumentation: "https://github.com/Florian59c/Hotel-deluxe",
+        lienGitHub: "https://github.com/Florian59c/Hotel-deluxe",
         lienSite: "https://hotel-deluxe-fcdw.web.app/"
     },
     {
@@ -123,9 +152,9 @@ const ListeProjets = [
         url: "marvel-univers",
         lienImage: IMG_marvel,
         listLangages: "HTML / CSS",
-        presentation: "Marvel Univers est le premier gros projet que j’ai effectué (au tout début de mon apprentissage), et est principalement constitué de styles statiques. Il contient une page principale permettant de découvrir l’univers de Marvel et les super-héros les plus représentatifs.\nLa page d’accueil présente quatre héros parmi les plus emblématiques du studio, des bandes annonces de film, des dates de sorties (bien que dépassé depuis quelques années), un formulaire de contact et la carte « Google map » de l’emplacement du siège social.\nDe plus, le « header » contient des redirections vers différentes parties du site et le « footer » redirige vers les réseaux sociaux.",
+        presentation: "Marvel Univers est le premier projet que j’ai effectué (au tout début de mon apprentissage) et est principalement constitué de styles statiques. Il contient une page principale permettant de découvrir l’univers de Marvel et les super-héros les plus représentatifs.\nLa page d’accueil présente quatre héros parmi les plus emblématiques du studio, des bandes annonces de film, des dates de sorties (bien que dépassé depuis quelques années), un formulaire de contact et la carte « Google map » de l’emplacement du siège social.\nDe plus, le « header » contient des redirections vers différentes parties du site et le « footer » redirige vers les réseaux sociaux.",
         details: "Quelques améliorations peuvent être envisagées. Le site n’étant pas responsive, une modification des styles pour adapter le contenu aux mobiles et tablettes est envisagé. Ensuite, effectuer quelque ajustement graphique tel que des effets au survol serait le bienvenu. De plus, les pages des super-héros sont créées, mais n’ont aucun contenu ; il pourrait être intéressant d’y ajouter une description de chacun des quatre héros.",
-        lienDocumentation: "https://github.com/Florian59c/MarvelUnivers",
+        lienGitHub: "https://github.com/Florian59c/MarvelUnivers",
         lienSite: "https://marvel-univers-fcdw.web.app/"
     }
 ];

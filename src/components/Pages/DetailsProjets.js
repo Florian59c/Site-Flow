@@ -34,17 +34,17 @@ const DetailsProjets = () => {
   // si seulement 1 existe : il est afficher avec un style pour le centrer
   // si aucun existe : n'affiche rien (pour ne pas avoir de titre sans boutons)
   const existBoutons = () => {
-    if (projetTrouver.lienDocumentation && projetTrouver.lienSite !== "") {
+    if (projetTrouver.lienGitHub && projetTrouver.lienSite !== "") {
       return (
         <div>
           <div>
-            <h3>Pour avoir encore plus d'informations, vous pouvez lire la documentation complète du projet ou le tester grâce aux boutons suivants !</h3>
+            <h3>Pour avoir encore plus d'informations, Vous pouvez explorer les liens suivants :</h3>
           </div>
           <div className='boutonRedirection'>
             <Row align='middle'>
               <Col xs={24} lg={12}>
                 <div className='boutonProjets'>
-                  <a href={projetTrouver.lienDocumentation} target="_blank" rel="noreferrer noopener">
+                  <a href={projetTrouver.lienGitHub} target="_blank" rel="noreferrer noopener">
                     <button>
                       <h1>
                         Le GitHub du projet
@@ -68,7 +68,7 @@ const DetailsProjets = () => {
           </div>
         </div>
       )
-    } else if (projetTrouver.lienDocumentation !== "") {
+    } else if (projetTrouver.lienGitHub !== "") {
       return (
         <div>
           <div>
@@ -78,7 +78,7 @@ const DetailsProjets = () => {
             <Row justify='center'>
               <Col xs={24} lg={12}>
                 <div className='boutonProjets'>
-                  <a href={projetTrouver.lienDocumentation} target="_blank" rel="noreferrer noopener">
+                  <a href={projetTrouver.lienGitHub} target="_blank" rel="noreferrer noopener">
                     <button>
                       <h1>
                         Le GitHub du projet
