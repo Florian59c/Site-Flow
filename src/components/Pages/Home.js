@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <div className='container' style={{ backgroundImage: `url(${nuit})` }}>
             <div className='titreProjet'>
-                <h1>Bienvenue sur <br />"Le site de Flow"</h1>
+                <h1>Bienvenue sur <br />Le site de Flow</h1>
                 <p>Il s'agit de mon portfolio sur lequel je recense les projets que j'ai réalisés pendant mon temps libre ou au cours de mes formations.</p>
             </div>
             <Link to="/Projets">

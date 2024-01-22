@@ -126,7 +126,7 @@ p {
   border-radius: 0 0 2rem 2rem;
   color: rgb(235, 235, 235);
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
   text-shadow: -0.1rem 0.1rem 0.2rem #E0E0E0;
   padding-bottom: 2px;
@@ -184,7 +184,11 @@ p {
 /* Styles de la page des projets */
 
 .projetsContainer {
-  margin: 20rem 3rem 0 3rem;
+  margin: 8rem 1.5rem 0 1.5rem;
+}
+
+.projets1er {
+  margin-top: 12rem;
 }
 
 .projetsContainer hr {
@@ -206,11 +210,15 @@ p {
   box-shadow: 0 1rem 1rem 0 rgb(0, 0, 0, 0.3);
   background: linear-gradient(rgb(99, 99, 110), rgb(59, 61, 70));
   box-sizing: border-box;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+}
+
+.boutonLienSite button {
+  margin-bottom: 6rem;
 }
 
 .boutonProjets h1 {
-  font-size: 4rem;
+  font-size: 2.75rem;
   padding: 1rem 0;
   color: rgb(235, 235, 235);
 }
@@ -248,35 +256,37 @@ p {
 h3 {
   text-align: center;
   font-weight: bold;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 .detailsProjetsContainer .titreProjet h1 {
-  font-size: 7rem;
+  font-size: 5rem;
+  margin-bottom: 0;
 }
 
 .detailsProjetsContainer h2 {
-  font-size: 5rem;
+  font-size: 3.5rem;
 }
 
 h3 {
-  margin-top: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
 }
 
-h3,
 .detailsProjetsContainer .listTechno {
   font-size: 2rem;
 }
 
 .detailsProjetsContainer p {
   text-align: justify;
-  /* font-size: 2rem; */
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 
 .detailsProjetsContainer .listTechno {
   text-align: end;
-  padding: 1rem 1rem 0 0;
+  padding: 0.5rem 0.5rem 0 0;
+  font-size: 1.25rem;
 }
 
 .detailsProjetsContainer img {
@@ -356,18 +366,35 @@ h3,
   width: 40rem;
 }
 
-/* pour les ecran superieur au mobile "standard" et inférieur aux tablettes */
-@media screen and (min-width: 416px) {
-  .projetsContainer {
-    margin-top: 12rem;
-  }
-}
-
 /* pour les ecran superieur au mobile */
 @media screen and (min-width: 500px) {
   .footer .copyright {
     display: contents;
   }
+
+  /* style de la page des projets */
+  .projetsContainer {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .detailsProjetsContainer .listTechno {
+    padding: 1rem 1rem 0 0;
+    font-size: 1.5rem;
+  }
+
+  .detailsProjetsContainer h2 {
+    font-size: 4rem;
+  }
+
+  .detailsProjetsContainer p {
+    font-size: 1.5rem;
+  }
+
+  .boutonProjets h1 {
+    font-size: 3.5rem;
+  }
+
 }
 
 /* pour les ecran superieur au mobile ET tablettes */
@@ -379,6 +406,10 @@ h3,
     /* retire le positionnement de la barre pour les grands ecrans */
     /* ainsi, le header ne reste pas lors du scroll */
     position: relative;
+  }
+
+  .header h1 {
+    font-size: 6rem;
   }
 
   /* Page Home */
@@ -404,7 +435,8 @@ h3,
   /* Page des projets */
 
   .projetsContainer {
-    margin: 4rem 8rem 0 8rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
   }
 
   /* rajoute un espacement sur les cotés pour dissocier le 2 parties */
@@ -428,7 +460,41 @@ h3,
   }
 
   .boutonRedirection .boutonProjets {
-    margin: 0 4rem;
+    margin: 0 2rem;
+  }
+
+  .projetsContainer {
+    margin-top: 0;
+  }
+
+  .projets1er {
+    margin-top: 6rem;
+  }
+
+  .detailsProjetsContainer .titreProjet h1 {
+    font-size: 7rem;
+    margin-top: 0;
+  }
+
+  .detailsProjetsContainer .listTechno {
+    font-size: 1.75rem;
+  }
+
+  .detailsProjetsContainer h2 {
+    font-size: 5rem;
+  }
+
+  .detailsProjetsContainer p {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    margin-top: 4rem;
+    font-size: 2.5rem;
+  }
+
+  .boutonProjets h1 {
+    font-size: 4rem;
   }
 
   /* partie projet introuvable de la page DetailsProjets */

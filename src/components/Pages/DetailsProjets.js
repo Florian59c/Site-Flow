@@ -33,89 +33,89 @@ const DetailsProjets = () => {
   // si les 2 existes : affiche les deux
   // si seulement 1 existe : il est afficher avec un style pour le centrer
   // si aucun existe : n'affiche rien (pour ne pas avoir de titre sans boutons)
-  const existBoutons = () => {
-    if (projetTrouver.lienGitHub && projetTrouver.lienSite !== "") {
-      return (
-        <div>
-          <div>
-            <h3>Pour avoir encore plus d'informations, Vous pouvez explorer les liens suivants :</h3>
-          </div>
-          <div className='boutonRedirection'>
-            <Row align='middle'>
-              <Col xs={24} lg={12}>
-                <div className='boutonProjets'>
-                  <a href={projetTrouver.lienGitHub} target="_blank" rel="noreferrer noopener">
-                    <button>
-                      <h1>
-                        Le GitHub du projet
-                      </h1>
-                    </button>
-                  </a>
-                </div>
-              </Col>
-              <Col xs={24} lg={12}>
-                <div className='boutonProjets'>
-                  <a href={projetTrouver.lienSite} target="_blank" rel="noreferrer noopener">
-                    <button>
-                      <h1>
-                        Découvrir {projetTrouver.nom}
-                      </h1>
-                    </button>
-                  </a>
-                </div>
-              </Col>
-            </Row>
-          </div>
-        </div>
-      )
-    } else if (projetTrouver.lienGitHub !== "") {
-      return (
-        <div>
-          <div>
-            <h3>Pour avoir encore plus d'informations, vous pouvez lire la documentation complète du projet !</h3>
-          </div>
-          <div className='boutonRedirection'>
-            <Row justify='center'>
-              <Col xs={24} lg={12}>
-                <div className='boutonProjets'>
-                  <a href={projetTrouver.lienGitHub} target="_blank" rel="noreferrer noopener">
-                    <button>
-                      <h1>
-                        Le GitHub du projet
-                      </h1>
-                    </button>
-                  </a>
-                </div>
-              </Col>
-            </Row>
-          </div>
-        </div>
-      )
-    } else if (projetTrouver.lienSite !== "") {
-      return (
-        <div>
-          <div>
-            <h3>Pour avoir encore plus d'informations, vous pouvez tester le projet grâce au bouton suivant !</h3>
-          </div>
-          <div className='boutonRedirection'>
-            <Row justify='center'>
-              <Col xs={24} lg={12}>
-                <div className='boutonProjets'>
-                  <a href={projetTrouver.lienSite} target="_blank" rel="noreferrer noopener">
-                    <button>
-                      <h1>
-                        Découvrir {projetTrouver.nom}
-                      </h1>
-                    </button>
-                  </a>
-                </div>
-              </Col>
-            </Row>
-          </div>
-        </div>
-      )
-    }
-  }
+  // const existBoutons = () => {
+  //   if (projetTrouver.lienGitHub && projetTrouver.lienSite !== "") {
+  //     return (
+  //       <div>
+  //         <div>
+  //           <h3>Pour avoir encore plus d'informations, Vous pouvez explorer les liens suivants :</h3>
+  //         </div>
+  //         <div className='boutonRedirection'>
+  //           <Row align='middle'>
+  //             <Col xs={24} lg={12}>
+  //               <div className='boutonProjets'>
+  //                 <a href={projetTrouver.lienSite} target="_blank" rel="noreferrer noopener">
+  //                   <button>
+  //                     <h1>
+  //                       Découvrir {projetTrouver.nom}
+  //                     </h1>
+  //                   </button>
+  //                 </a>
+  //               </div>
+  //             </Col>
+  //             <Col xs={24} lg={12}>
+  //               <div className='boutonProjets'>
+  //                 <a href={projetTrouver.lienGitHub} target="_blank" rel="noreferrer noopener">
+  //                   <button>
+  //                     <h1>
+  //                       Le GitHub du projet
+  //                     </h1>
+  //                   </button>
+  //                 </a>
+  //               </div>
+  //             </Col>
+  //           </Row>
+  //         </div>
+  //       </div>
+  //     )
+  //   } else if (projetTrouver.lienGitHub !== "") {
+  //     return (
+  //       <div>
+  //         <div>
+  //           <h3>Pour avoir encore plus d'informations, vous pouvez lire la documentation complète du projet !</h3>
+  //         </div>
+  //         <div className='boutonRedirection'>
+  //           <Row justify='center'>
+  //             <Col xs={24} lg={12}>
+  //               <div className='boutonProjets'>
+  //                 <a href={projetTrouver.lienGitHub} target="_blank" rel="noreferrer noopener">
+  //                   <button>
+  //                     <h1>
+  //                       Le GitHub du projet
+  //                     </h1>
+  //                   </button>
+  //                 </a>
+  //               </div>
+  //             </Col>
+  //           </Row>
+  //         </div>
+  //       </div>
+  //     )
+  //   } else if (projetTrouver.lienSite !== "") {
+  //     return (
+  //       <div>
+  //         <div>
+  //           <h3>Pour avoir encore plus d'informations, vous pouvez tester le projet grâce au bouton suivant !</h3>
+  //         </div>
+  //         <div className='boutonRedirection'>
+  //           <Row justify='center'>
+  //             <Col xs={24} lg={12}>
+  //               <div className='boutonProjets'>
+  //                 <a href={projetTrouver.lienSite} target="_blank" rel="noreferrer noopener">
+  //                   <button>
+  //                     <h1>
+  //                       Découvrir {projetTrouver.nom}
+  //                     </h1>
+  //                   </button>
+  //                 </a>
+  //               </div>
+  //             </Col>
+  //           </Row>
+  //         </div>
+  //       </div>
+  //     )
+  //   }
+  // }
 
   return (
     <div>
@@ -146,7 +146,68 @@ const DetailsProjets = () => {
               </div>
               {existDetails()}
             </div>
-            {existBoutons()}
+            <div>
+              <h3>Pour avoir encore plus d'informations, Vous pouvez explorer les liens suivants :</h3>
+            </div>
+            <div className='boutonRedirection'>
+              <Row justify="center" className='boutonLienSite'>
+                {projetTrouver.lienSite !== "" ? (
+                  <Col xs={24} lg={18}>
+                    <div className='boutonProjets'>
+                      <a href={projetTrouver.lienSite} target="_blank" rel="noreferrer noopener">
+                        <button>
+                          <h1>
+                            Parcourir {projetTrouver.nom}
+                          </h1>
+                        </button>
+                      </a>
+                    </div>
+                  </Col>
+                ) : ""}
+              </Row>
+              <Row align='middle' justify="center">
+                {projetTrouver.lienGitHub !== "" ? (
+                  <Col xs={24} lg={12}>
+                    <div className='boutonProjets'>
+                      <a href={projetTrouver.lienGitHub} target="_blank" rel="noreferrer noopener">
+                        <button>
+                          <h1>
+                            Le lien GitHub
+                          </h1>
+                        </button>
+                      </a>
+                    </div>
+                  </Col>
+                ) : ""}
+                {projetTrouver.lienFigma !== "" ? (
+                  <Col xs={24} lg={12}>
+                    <div className='boutonProjets'>
+                      <a href={projetTrouver.lienFigma} target="_blank" rel="noreferrer noopener">
+                        <button>
+                          <h1>
+                            Les maquettes du projet
+                          </h1>
+                        </button>
+                      </a>
+                    </div>
+                  </Col>
+                ) : ""}
+                {projetTrouver.lienDocumentation !== "" ? (
+                  <Col xs={24} lg={12}>
+                    <div className='boutonProjets'>
+                      <a href={projetTrouver.lienDocumentation} target="_blank" rel="noreferrer noopener">
+                        <button>
+                          <h1>
+                            La documentation
+                          </h1>
+                        </button>
+                      </a>
+                    </div>
+                  </Col>
+                ) : ""}
+              </Row>
+            </div>
+            {/* {existBoutons()} */}
           </div>
           <Footer />
         </div>
