@@ -58,6 +58,22 @@ const DetailsProjets = () => {
               </div>
               {existDetails()}
             </div>
+
+            {projetTrouver.video.length !== 0 ?
+              <Row align='middle' justify="end" gutter={24}>
+                {projetTrouver.video.map(v => {
+                  return (
+                    <Col xs={24} lg={12}>
+                      <video width="100%" controls>
+                        <source src={v.url} type="video/mp4" />
+                        {v.name}
+                      </video>
+                    </Col>
+                  )
+                })}
+              </Row>
+              : ""}
+
             <div>
               <h3>Pour avoir encore plus d'informations, Vous pouvez explorer les liens suivants :</h3>
             </div>
