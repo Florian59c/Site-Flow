@@ -1,3 +1,4 @@
+// Les images :
 import IMG_interrogation from "../../img/screenshot/point d'interrogation.png";
 import IMG_site_de_Flow from "../../img/screenshot/Site de Flow.png";
 import IMG_marvel from "../../img/screenshot/Marvel Univers.png";
@@ -9,13 +10,18 @@ import IMG_roll_dice from "../../img/screenshot/Roll Dice.png";
 import IMG_point_n_click from "../../img/screenshot/Point'n'Click.png";
 import IMG_copilote from "../../img/screenshot/Copilote.png";
 import IMG_weteknow from "../../img/screenshot/WeTeKnow.png";
-
+// Les vidéos
 import Copilote_web from '../../video/Copilote_web.mp4';
 import Copilote_natif from '../../video/Copilote_natif.mp4';
+import Roll_Dice from '../../video/Roll_Dice.mp4';
+import Disney from '../../video/Disney.mp4';
+import Disney_mobile from '../../video/Disney_mobile.mp4';
+import Hotel from '../../video/Hotel.mp4';
+import Marvel from '../../video/Marvel.mp4';
 
 const ListeProjets = [
     {
-        id: 0,
+        id: 1,
         nom: "Le site de Flow",
         titre: "Présentation du site",
         url: "presentation-du-site",
@@ -44,7 +50,7 @@ const ListeProjets = [
     // lienDocumentation: ""
     // },
     {
-        id: 9,
+        id: 10,
         nom: "WeTeKnow",
         titre: "WeTeKnow",
         url: "weteknow",
@@ -59,7 +65,7 @@ const ListeProjets = [
         lienDocumentation: "https://www.behance.net/gallery/187747797/WETEKNOW-QUIZFIGMA-MAQUETTAGE-PROTOTYPAGE-ANIMATIONS"
     },
     {
-        id: 8,
+        id: 9,
         nom: "Copilote",
         titre: "Copilote",
         url: "copilote",
@@ -85,7 +91,7 @@ const ListeProjets = [
         lienDocumentation: "https://docs.google.com/document/d/1FisUr0ik_HSxBbNzFaAHs7i7ZCF0SnG4Jj5ci9H59TI/edit?usp=sharing"
     },
     {
-        id: 7,
+        id: 8,
         nom: "Point'n'Click",
         titre: "Point'n'Click",
         url: "point-n-click",
@@ -100,7 +106,7 @@ const ListeProjets = [
         lienDocumentation: ""
     },
     {
-        id: 6,
+        id: 7,
         nom: "Roll Dice",
         titre: "Roll Dice",
         url: "roll-dice",
@@ -108,14 +114,20 @@ const ListeProjets = [
         listLangages: "React / Typescript",
         presentation: "Cette application permet aux utilisateurs de lancer des dés parmi un panel prédéfini.\nL'application possède une page principale sur laquelle l'on choisie le dé que l'on souhaite lancer.\nUne fois le type de dé sélectionné, il est possible de le lancer ou le relancer, réinitialiser le lancer précédent ou changer de dé. Au clic sur le bouton « Lancer le dé », une animation se lance avant d'afficher le résultat. Le bouton « réinitialiser le dé » permet d'effacer un résultat et le bouton « Changer de dé » permet de revenir à la page principale.",
         details: "J'ai choisi de créer ce projet pour davantage me familiariser avec TypeScript et parce que je suis adepte des jeux de plateaux et jeux de rôles.",
-        video: [],
+        video: [
+            {
+                id: 1,
+                name: "Démonstration de l'application Roll Dice",
+                url: Roll_Dice
+            }
+        ],
         lienSite: "https://roll-dice-flow.web.app/",
         lienGitHub: "https://github.com/Florian59c/roll-dice",
         lienFigma: "",
         lienDocumentation: ""
     },
     {
-        id: 5,
+        id: 6,
         nom: "Disney +",
         titre: "Disney +",
         url: "disney+",
@@ -123,14 +135,25 @@ const ListeProjets = [
         listLangages: "React",
         presentation: "Disney + est le premier projet que j’ai fait en React. De ce fait, il fonctionne grâce à la fonction « render » et ne contient aucun « Hooks ». De plus, les informations sont récupérées grâce à une API. Le but de ce projet était de me familiariser avec Reat en recréant une copie de la première version du site Disney +.\nLe site contient trois pages : la page d’accueil, une page contant les films triés par rapport aux company, et une page de description pour chaque film.\nLe « Header » et les boutons listant les conpany sont des composants réutilisés à plusieurs endroits. Le « Header » est utilisé sur toutes les pages et redirige sur la page d’accueil.",
         details: "La page d’accueil est découpée en trois parties : les boutons des company qui permettent d’aller sur la page dédiée à chaque studio, la partie nouveauté qui affiche 6 films parmi les plus récentes recensés dans l’api, et la partie suggestion qui affiche 3 films ayant le paramètre activé dans l’api.\nCliquer sur le bouton d’un studio nous amène sur la page de la company, générée dynamiquement. Elle affiche la liste des films du studio.\nUn clic sur l’affiche d’un film, sur la page d’accueil ou la page du studio, enverra sur la page de description du film. Les descriptions y sont générées dynamiquement de la même manière que pour la page des company.\nLa partie « Flexbox » et responsive et géré grâce au système de grille d’ « Ant Design ».\nIl y a également une page « NotFound » qui affiche un message d’erreur lorsque l’URL est incorrect.",
-        video: [],
+        video: [
+            {
+                id: 1,
+                name: "Démonstration de la version web de Disney+",
+                url: Disney
+            },
+            {
+                id: 2,
+                name: "Démonstration de la version mobile de Disney+",
+                url: Disney_mobile
+            }
+        ],
         lienSite: "https://disney-fcdw.web.app/#/",
         lienGitHub: "https://github.com/Florian59c/Disney",
         lienFigma: "",
         lienDocumentation: ""
     },
     {
-        id: 4,
+        id: 5,
         nom: "Search Cars",
         titre: "Search Cars",
         url: "search-cars",
@@ -145,7 +168,7 @@ const ListeProjets = [
         lienDocumentation: ""
     },
     {
-        id: 3,
+        id: 4,
         nom: "Clean3000",
         titre: "Clean3000",
         url: "clean3000",
@@ -160,7 +183,7 @@ const ListeProjets = [
         lienDocumentation: ""
     },
     {
-        id: 2,
+        id: 3,
         nom: "Hôtel Deluxe",
         titre: "gestionnaire d'hôtel",
         url: "hotel-deluxe",
@@ -168,14 +191,20 @@ const ListeProjets = [
         listLangages: "HTML / CSS / JS / Git",
         presentation: "L’Hôtel Deluxe est un site qui permet de gérer les entrées et sorties d’un hôtel. Ce projet a été effectué en binôme avec l’aide de Git. Pour le bon déroulement du développement, nous avons découpé le site en deux : la partie « entrée » et la partie « sortie » que nous nous sommes repartie.\nTout le site est avant tout en HTML / CSS et est responsive. Git a été utilisé pour nous partager le travail au fur et à mesure des avancements de chacun. Puisque les styles étaient communs, nous nous étions mis d’accord sur les noms des classes à utiliser afin de séparer également le travail sur les styles.\nLa partie calcul est faite en JS et permet d’ajouter un client de l’hôtel, puis de lui dire le prix de son séjour au moment de son départ.",
         details: "Tout le site tient sur une seule page et est essentiellement constitué de « Front ». L’entrée du client se fait via un formulaire et les données sont temporairement enregistrées dans la page. Actualiser ou quitter la page effacera les données.\nEn sortie, il suffit d’avoir le nom et prénom du client pour que le calcul du prix se fasse avec les données enregistrées en entrée, puis le prix est affiché en bas de page.\nIl y a également les gestions d’erreurs dans le cas où le client ne serait pas trouvé. Un message d’erreur apparaîtra à la place du prix.",
-        video: [],
+        video: [
+            {
+                id: 1,
+                name: "Démonstration du site de gestion d'hôtel",
+                url: Hotel
+            }
+        ],
         lienSite: "https://hotel-deluxe-fcdw.web.app/",
         lienGitHub: "https://github.com/Florian59c/Hotel-deluxe",
         lienFigma: "",
         lienDocumentation: ""
     },
     {
-        id: 1,
+        id: 2,
         nom: "Marvel Univers",
         titre: "Marvel Univers",
         url: "marvel-univers",
@@ -183,7 +212,13 @@ const ListeProjets = [
         listLangages: "HTML / CSS",
         presentation: "Marvel Univers est le premier projet que j’ai effectué (au tout début de mon apprentissage) et est principalement constitué de styles statiques. Il contient une page principale permettant de découvrir l’univers de Marvel et les super-héros les plus représentatifs.\nLa page d’accueil présente quatre héros parmi les plus emblématiques du studio, des bandes annonces de film, des dates de sorties (bien que dépassé depuis quelques années), un formulaire de contact et la carte « Google map » de l’emplacement du siège social.\nDe plus, le « header » contient des redirections vers différentes parties du site et le « footer » redirige vers les réseaux sociaux.",
         details: "Quelques améliorations peuvent être envisagées. Le site n’étant pas responsive, une modification des styles pour adapter le contenu aux mobiles et tablettes est envisagé. Ensuite, effectuer quelque ajustement graphique tel que des effets au survol serait le bienvenu. De plus, les pages des super-héros sont créées, mais n’ont aucun contenu ; il pourrait être intéressant d’y ajouter une description de chacun des quatre héros.",
-        video: [],
+        video: [
+            {
+                id: 1,
+                name: "Démonstration du site Marvel",
+                url: Marvel
+            }
+        ],
         lienSite: "https://marvel-univers-fcdw.web.app/",
         lienGitHub: "https://github.com/Florian59c/MarvelUnivers",
         lienFigma: "",

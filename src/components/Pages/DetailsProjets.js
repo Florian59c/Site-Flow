@@ -57,25 +57,25 @@ const DetailsProjets = () => {
                 </Row>
               </div>
               {existDetails()}
-              <div className='video-projet'>
-                {projetTrouver.video.length !== 0 ?
-                  <div>
-                    <h3>Vidéo{projetTrouver.video.length > 1 ? "s" : ""} de Démonstration :</h3>
-                    <Row align='middle' justify="center" gutter={24}>
-                      {projetTrouver.video.map(v => {
-                        return (
-                          <Col xs={24} lg={12}>
-                            <video width="100%" controls>
-                              <source src={v.url} type="video/mp4" />
-                              {v.name}
-                            </video>
-                          </Col>
-                        )
-                      })}
-                    </Row>
-                  </div>
-                  : ""}
-              </div>
+            </div>
+            <div className='video-projet'>
+              {projetTrouver.video.length !== 0 ?
+                <div>
+                  <h3>Vidéo{projetTrouver.video.length > 1 ? "s" : ""} de Démonstration :</h3>
+                  <Row align='middle' justify="center" gutter={24}>
+                    {projetTrouver.video.map(v => {
+                      return (
+                        <Col xs={24} lg={8}>
+                          <video width="100%" controls>
+                            <source src={v.url} type="video/mp4" />
+                            {v.name}
+                          </video>
+                        </Col>
+                      )
+                    })}
+                  </Row>
+                </div>
+                : ""}
             </div>
             <div>
               <h3>Pour avoir encore plus d'informations, Vous pouvez explorer les liens suivants :</h3>
