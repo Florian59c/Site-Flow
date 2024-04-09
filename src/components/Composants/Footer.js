@@ -2,7 +2,6 @@ import React from 'react';
 import { Col, Row } from 'antd';
 import AN from '../../img/Drapeau-Anglais.png';
 import JP from '../../img/Drapeau-Japonais.png';
-import CV from '../../fichiers/CV - Cagnon Florian.pdf';
 
 const Footer = () => {
 
@@ -12,7 +11,7 @@ const Footer = () => {
                 <Col>
                     <Row>
                         <Col span={24}>
-                            <a href={CV} target="_blank" rel="noreferrer noopener"><p>CV</p></a>
+                            <a href="https://drive.google.com/file/d/17NxyJVGgkQH_FPYslWWl6PrO7AGZu7aW/view" target="_blank" rel="noreferrer noopener"><p>CV</p></a>
                         </Col>
                         <Col span={24}>
                             <a href="https://www.linkedin.com/in/florian-cagnon-dev-web-fullstack/" target="_blank" rel="noreferrer noopener"><p>LinkedIn</p></a>
