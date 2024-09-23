@@ -11,7 +11,7 @@ const Footer = () => {
                 <Col>
                     <Row>
                         <Col span={24}>
-                            <a href="https://drive.google.com/file/d/17NxyJVGgkQH_FPYslWWl6PrO7AGZu7aW/view" target="_blank" rel="noreferrer noopener"><p>CV</p></a>
+                            <a href="https://drive.google.com/file/d/1-qLihaXJ1557N9wxZ4myGE6jyInXCkjH/view?usp=drive_link" target="_blank" rel="noreferrer noopener"><p>CV</p></a>
                         </Col>
                         <Col span={24}>
                             <a href="https://www.linkedin.com/in/florian-cagnon-dev-web-fullstack/" target="_blank" rel="noreferrer noopener"><p>LinkedIn</p></a>

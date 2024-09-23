@@ -278,6 +278,11 @@ h3 {
   font-size: 2rem;
 }
 
+.video-title {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
 .detailsProjetsContainer p {
   text-align: justify;
   margin-bottom: 0;

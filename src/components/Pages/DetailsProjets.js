@@ -68,8 +68,8 @@ const DetailsProjets = () => {
                         <Col xs={24} lg={8}>
                           <video width="100%" controls>
                             <source src={v.url} type="video/mp4" />
-                            {v.name}
                           </video>
+                          <p className='video-title'>{v.name}</p>
                         </Col>
                       )
                     })}

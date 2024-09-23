@@ -10,7 +10,10 @@ import IMG_roll_dice from "../../img/screenshot/Roll Dice.png";
 import IMG_point_n_click from "../../img/screenshot/Point'n'Click.png";
 import IMG_copilote from "../../img/screenshot/Copilote.png";
 import IMG_weteknow from "../../img/screenshot/WeTeKnow.png";
-// Les vidéos
+import IMG_flowblog from "../../img/screenshot/FlowBlog.png";
+// Les vidéos :
+import FlowBlog_User from '../../video/FlowBlog_User.mp4';
+import FlowBlog_Admin from '../../video/FlowBlog_Admin.mp4';
 import Copilote_web from '../../video/Copilote_web.mp4';
 import Copilote_natif from '../../video/Copilote_natif.mp4';
 import Roll_Dice from '../../video/Roll_Dice.mp4';
@@ -49,6 +52,32 @@ const ListeProjets = [
     // lienFigma: "",
     // lienDocumentation: ""
     // },
+    {
+        id: 11,
+        nom: "FlowBlog",
+        titre: "FlowBlog",
+        url: "flowblog",
+        lienImage: IMG_flowblog,
+        listLangages: "React / Bootstrap / Symfony / MySQL",
+        presentation: `Flowblog est une application que j'ai réalisée lors d'un test technique au cours de ma recherche d'alternance. Le blog devait être réalisé en 2 semaines en respectant un cahier des charges fournies par l'entreprise et en utilisant les technos utilisées en interne : React, Bootstrap et Symfony.\nL'application possède une gestion d'utilisateur avec des mots de passe hachés et une gestion de rôle avec des envois de mails pour une vérification de compte. Il offre la possibilité pour un utilisateur de prendre contact avec moi par mail et d'écrire des commentaires sur les posts.\nUn administrateur peut accéder à la liste des commentaires soumis et les accepte pour qu'ils apparaissent dans le post en lien ou les supprimer. Il peut aussi ajouter, modifier ou supprimer des posts. Les posts sont affichés par date de création ou de dernière modification en commençant par le plus récent.`,
+        details: "Flowblog est le 1er projet que j'ai réalisé avec Symfony tout en n'ayant jamais travaillé avec ce Framework. Durant les 2 semaines de conceptions, j'ai appris à l'utiliser et je suis parvenue à réaliser toutes les fonctionnalités du cahier des charges. De plus, j'ai également appris à utiliser Bootstrap pour styliser l'application.",
+        video: [
+            {
+                id: 1,
+                name: "Démonstration de FlowBlog avec un compte Utilisateur",
+                url: FlowBlog_User
+            },
+            {
+                id: 2,
+                name: "Démonstration des fonctionnalités de FlowBlog en tant qu'admin",
+                url: FlowBlog_Admin
+            }
+        ],
+        lienSite: "",
+        lienGitHub: "",
+        lienFigma: "",
+        lienDocumentation: ""
+    },
     {
         id: 10,
         nom: "WeTeKnow",
